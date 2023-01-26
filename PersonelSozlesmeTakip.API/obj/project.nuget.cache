@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "7taT47ifwVWzV86NkXdydRvowAFojTDn0LYuwasee+s8Wn97LwZ+umrGqqibGLC3P9YMkt0pLOm05Q9GNXLXEA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Yunus\\source\\repos\\PersonelSoszlesmeTakip\\PersonelSozlesmeTakip.API\\PersonelSozlesmeTakip.API.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Yunus\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\Yunus\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\Yunus\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "C:\\Users\\Yunus\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "C:\\Users\\Yunus\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "C:\\Users\\Yunus\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}
