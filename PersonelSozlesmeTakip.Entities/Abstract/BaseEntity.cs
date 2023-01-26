@@ -10,7 +10,7 @@ namespace PersonelSozlesmeTakip.Entities.Abstract
     {
         public T Id { get; set; }
         public string Name { get; set; }
-        public DateTime CerateDate { get; set; }
+        public DateTime CerateDate { get; set; } = DateTime.Now;
 
         public DateTime ModifiedDate { get; set; }
     }

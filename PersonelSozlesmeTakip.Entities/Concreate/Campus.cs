@@ -7,15 +7,13 @@ using System.Threading.Tasks;
 
 namespace PersonelSozlesmeTakip.Entities.Concreate
 {
-    public class University : BaseEntity<Guid>
+    public class Campus : BaseEntity<Guid>
     {
-        public string City { get; set; }
+        public Guid UniversityId { get; set; }
 
+        public University University { get; set; }
 
-        public List<Campus> Campuses { get; set; }
-
-
-
+        public List<Faculty> Faculties { get; set; }
 
     }
 }
