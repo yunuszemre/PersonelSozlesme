@@ -9,6 +9,7 @@ namespace PersonelSozlesmeTakip.Entities.Abstract
     public abstract class BaseEntity<T>
     {
         public T Id { get; set; }
+        public string Name { get; set; }
         public DateTime CerateDate { get; set; }
 
         public DateTime ModifiedDate { get; set; }
