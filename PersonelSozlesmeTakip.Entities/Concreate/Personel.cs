@@ -13,6 +13,16 @@ namespace PersonelSozlesmeTakip.Entities.Concreate
 
         public DepartmentPerson DepartmentPerson { get; set; }
 
-        
+        public string Email { get; set; }
+
+        public string? IntegratedPhone { get; set; }
+
+        public DateTime ContractEndDate { get; set; }
+
+        public DateTime ContractStartDate { get; set; }
+
+        public string Phone { get; set; }
+
+
     }
 }
