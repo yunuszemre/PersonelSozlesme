@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace PersonelSozlesmeTakip.Entities.Concreate
 {
-    public class Admin:BaseEntity<Guid>
+    public class Admin : BaseEntity<Guid>
     {
         public Role Role { get; set; }
         public List<University> Universities { get; set; }

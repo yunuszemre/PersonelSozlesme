@@ -9,8 +9,10 @@ namespace PersonelSozlesmeTakip.Entities.Concreate
 {
     public class Department : BaseEntity<Guid>
     {
-        public Guid DepartmentPersonId { get; set; }
+        public Guid FacultyId { get; set; }
 
-        public DepartmentPerson DepartmentPerson { get; set; }
+        public virtual Faculty? Faculty { get; set; }
+
+
     }
 }

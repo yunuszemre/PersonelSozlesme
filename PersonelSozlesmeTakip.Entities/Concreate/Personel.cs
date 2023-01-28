@@ -11,11 +11,6 @@ namespace PersonelSozlesmeTakip.Entities.Concreate
 {
     public class Personel : BaseEntity<Guid>
     {
-        [ForeignKey("DepartmentPerson")]
-        public Guid DepartmentPersonId { get; set; }
-
-        public DepartmentPerson DepartmentPerson { get; set; }
-
         public Role Role { get; set; }
         public string Email { get; set; }
 

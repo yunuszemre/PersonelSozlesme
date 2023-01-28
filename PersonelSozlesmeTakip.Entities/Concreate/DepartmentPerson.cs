@@ -9,13 +9,10 @@ namespace PersonelSozlesmeTakip.Entities.Concreate
 {
     public class DepartmentPerson:BaseEntity<Guid>
     {
-        public DepartmentPerson()
-        {
-            this.Persons = new List<Personel>();
-            this.Departments= new List<Department>();
-        }
-        public List<Personel> Persons { get; set; }
+        public Guid PersonelId { get; set; }
 
-        public List<Department> Departments { get; set; }
+        public Guid DepartmentId { get; set; }
+
+        
     }
 }
