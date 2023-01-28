@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\PersonelSozlesmeTakip.Core\PersonelSozlesmeTakip.Core.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "PersonelSozlesmeTakip.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/PersonelSozlesmeTakip.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PersonelSozlesmeTakip.Core.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "PersonelSozlesmeTakip.Core/1.0.0": {
+      "type": "project",
+      "path": "../PersonelSozlesmeTakip.Core/PersonelSozlesmeTakip.Core.csproj",
+      "msbuildProject": "../PersonelSozlesmeTakip.Core/PersonelSozlesmeTakip.Core.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "PersonelSozlesmeTakip.Core >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Yunus\\.nuget\\packages\\": {}
@@ -33,7 +52,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Yunus\\source\\repos\\PersonelSoszlesmeTakip\\PersonelSozlesmeTakip.Core\\PersonelSozlesmeTakip.Core.csproj": {
+              "projectPath": "C:\\Users\\Yunus\\source\\repos\\PersonelSoszlesmeTakip\\PersonelSozlesmeTakip.Core\\PersonelSozlesmeTakip.Core.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
