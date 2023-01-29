@@ -9,6 +9,10 @@ namespace PersonelSozlesmeTakip.Entities.Concreate
 {
     public class Campus : BaseEntity<Guid>
     {
+        public Campus()
+        {
+            this.Faculties = new List<Faculty>();
+        }
         public Guid UniversityId { get; set; }
 
         public University University { get; set; }

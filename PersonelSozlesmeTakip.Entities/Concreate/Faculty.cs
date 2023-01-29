@@ -12,6 +12,7 @@ namespace PersonelSozlesmeTakip.Entities.Concreate
     {
         public Faculty()
         {
+            this.Personels = new List<Personel>();
             this.Departments = new List<Department>();
         }
 
@@ -20,6 +21,8 @@ namespace PersonelSozlesmeTakip.Entities.Concreate
         public Guid CampusId { get; set; }
 
         public virtual Campus? Campus { get; set; }
+
+        public List<Personel> Personels { get; set; }
         public List<Department> Departments { get; set; }
     }
 }
