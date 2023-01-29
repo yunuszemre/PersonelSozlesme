@@ -11,8 +11,13 @@ namespace PersonelSozlesmeTakip.Entities.Concreate
 {
     public class Personel : BaseEntity<Guid>
     {
+        public Personel()
+        {
+            this.Departments = new List<DepartmentPerson>();
+            this.Roles = new List<RolePersonel>();
+        }
         
-        public List<Role> Roles { get; set; }
+        public List<RolePersonel> Roles { get; set; }
         public string? Email { get; set; }
 
         public string LastName { get; set; }
@@ -23,7 +28,7 @@ namespace PersonelSozlesmeTakip.Entities.Concreate
 
         public Faculty? Faculty { get; set; }
 
-        public List<Department> Departments { get; set; }
+        public virtual ICollection<DepartmentPerson> Departments { get; set; }
         public DateTime? ContractEndDate { get; set; }
 
         public DateTime ContractStartDate { get; set; }

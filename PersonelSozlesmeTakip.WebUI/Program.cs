@@ -1,3 +1,5 @@
+using Microsoft.AspNetCore.Identity;
+
 namespace PersonelSozlesmeTakip.WebUI
 {
     public class Program
@@ -8,7 +10,6 @@ namespace PersonelSozlesmeTakip.WebUI
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
-
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.

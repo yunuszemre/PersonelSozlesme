@@ -30,21 +30,20 @@ namespace PersonelSozlesmeTakip.DAL.Context
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            //modelBuilder.Entity<DepartmentPersonel>()
+            //modelBuilder.Entity<DepartmentPerson>()
             //    .HasKey(x => new { x.PersonelId, x.DepartmentId });
 
-            //modelBuilder.Entity<DepartmentPersonel>()
+            //modelBuilder.Entity<DepartmentPerson>()
             //    .HasOne(x => x.Personel)
             //    .WithMany(x => x.Departments)
-            //    .HasForeignKey(x1 => x1.PersonelId);
+            //    .HasForeignKey(x => x.PersonelId);
 
-            //modelBuilder.Entity<DepartmentPersonel>()
+            //modelBuilder.Entity<DepartmentPerson>()
             //    .HasOne(x => x.Department)
             //    .WithMany(x => x.Personels)
             //    .HasForeignKey(x1 => x1.DepartmentId);
 
-            modelBuilder.Entity<Personel>()
-                .HasNoKey();
+            
 
             modelBuilder.ApplyConfiguration(new PersonelCOnfiguration());
             modelBuilder.ApplyConfiguration(new UniversityConfiguration());
@@ -52,6 +51,8 @@ namespace PersonelSozlesmeTakip.DAL.Context
             modelBuilder.ApplyConfiguration(new DepartmentConfiguration());
             modelBuilder.ApplyConfiguration(new FacultyConfiguration());
             modelBuilder.ApplyConfiguration(new CampusConfiguration());
+            modelBuilder.ApplyConfiguration(new DepartmenPersonConfiguration());
+            modelBuilder.ApplyConfiguration(new RolePersonelConfiguration());
 
             base.OnModelCreating(modelBuilder);
         }

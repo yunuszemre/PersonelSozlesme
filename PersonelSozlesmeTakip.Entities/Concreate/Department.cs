@@ -9,12 +9,14 @@ namespace PersonelSozlesmeTakip.Entities.Concreate
 {
     public class Department : BaseEntity<Guid>
     {
-        
-        
+        public Department()
+        {
+            this.Personels = new List<DepartmentPerson>();  
+        }
         public Guid FacultyId { get; set; }        
         public virtual Faculty? Faculty { get; set; }
 
-        public virtual List<Personel> Personels { get; set; }
+        public virtual ICollection<DepartmentPerson> Personels { get; set; }
 
     }
 }
