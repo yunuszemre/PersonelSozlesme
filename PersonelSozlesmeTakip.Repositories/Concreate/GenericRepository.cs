@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace PersonelSozlesmeTakip.Repositories.Concreate
 {
-    public class GenericRepository<T> : IGenericRepository<T> where T : BaseEntity<T>
+    public class GenericRepository<T> : IGenericRepository<T> where T : BaseEntity
     {
         private readonly PersonelSozlesmeContext _context;
         private DbSet<T> _dbSet;
@@ -37,7 +37,7 @@ namespace PersonelSozlesmeTakip.Repositories.Concreate
             return _dbSet.ToList();
         }
 
-        public Guid GetById(Guid Id)
+        public T GetById(Guid Id)
         {
             return _dbSet.Find(Id);
         }

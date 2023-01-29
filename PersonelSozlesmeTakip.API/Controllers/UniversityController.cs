@@ -9,9 +9,9 @@ namespace PersonelSozlesmeTakip.API.Controllers
     [ApiController]
     public class UniversityController : ControllerBase
     {
-        private readonly IGenericService<University> _service;
+        private readonly IUniversityService _service;
 
-        public UniversityController(IGenericService<University> service)
+        public UniversityController(IUniversityService service)
         {
             this._service = service;
         }
@@ -33,7 +33,7 @@ namespace PersonelSozlesmeTakip.API.Controllers
             }
             else
             {
-                return BadRequest();    
+                return BadRequest("Girilen Id'ye sahip bir Üniversite bulunamadı");    
             }
         }
     }

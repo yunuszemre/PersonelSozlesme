@@ -11,7 +11,7 @@ namespace PersonelSozlesmeTakip.BL.Abstract
     public interface IGenericService<T> 
 
     {
-        Guid GetById(Guid id);
+        T GetById(Guid id);
 
         List<T> GetDefault(Expression<Func<T, bool>> predicate);
 

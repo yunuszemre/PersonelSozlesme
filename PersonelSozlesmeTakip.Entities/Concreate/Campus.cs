@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace PersonelSozlesmeTakip.Entities.Concreate
 {
-    public class Campus : BaseEntity<Guid>
+    public class Campus : BaseEntity
     {
         public Campus()
         {

@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace PersonelSozlesmeTakip.Entities.Concreate
 {
-    public class Personel : BaseEntity<Guid>
+    public class Personel : BaseEntity
     {
         public Personel()
         {

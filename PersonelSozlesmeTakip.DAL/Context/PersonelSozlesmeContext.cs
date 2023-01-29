@@ -12,9 +12,7 @@ namespace PersonelSozlesmeTakip.DAL.Context
 {
     public class PersonelSozlesmeContext : DbContext
     {
-        public PersonelSozlesmeContext(DbContextOptions options) : base(options)
-        {
-        }
+        
 
         public DbSet<Personel> Personels { get; set; }
         public DbSet<Faculty> Faculties { get; set; }
@@ -27,9 +25,12 @@ namespace PersonelSozlesmeTakip.DAL.Context
 
         public DbSet<University> Universities { get; set; }
 
+        public PersonelSozlesmeContext(DbContextOptions options) : base(options)
+        {
+        }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=DESKTOP-BODOH2U\\SA; Database=UniDb; uid = sa; pwd = 1234");
+            optionsBuilder.UseSqlServer("Server=DESKTOP-BODOH2U\\SA; Database=UniDb; uid = sa; pwd = 1234;");
             base.OnConfiguring(optionsBuilder);
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)

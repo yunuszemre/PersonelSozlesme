@@ -11,15 +11,15 @@ using System.Threading.Tasks;
 
 namespace PersonelSozlesmeTakip.BL.Concreate
 {
-    public class GenericService<T> : IGenericService<T> where T : BaseEntity<T>
+    public class GenericService<T> : IGenericService<T> where T : BaseEntity
     {
         private readonly IGenericRepository<T> _repo;
-        private readonly PersonelSozlesmeContext _context;
+        
 
-        public GenericService(IGenericRepository<T> repo, PersonelSozlesmeContext context)
+        public GenericService(IGenericRepository<T> repo)
         {
             this._repo = repo;
-            this._context = context;
+            
         }
         public void Add(T entiy)
         {
@@ -33,7 +33,7 @@ namespace PersonelSozlesmeTakip.BL.Concreate
 
         public ICollection<T> GetAll() => _repo.GetAll();
 
-        public Guid GetById(Guid id)
+        public T GetById(Guid id)
         {
             return _repo.GetById(id);
         }

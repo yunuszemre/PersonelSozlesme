@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace PersonelSozlesmeTakip.Entities.Concreate
 {
-    public class Role : BaseEntity<int>
+    public class Role : BaseEntity
     {
         public Role()
         {

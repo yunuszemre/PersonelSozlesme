@@ -7,10 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Abstract\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\PersonelSozlesmeTakip.DAL\PersonelSozlesmeTakip.DAL.csproj" />
     <ProjectReference Include="..\PersonelSozlesmeTakip.Entities\PersonelSozlesmeTakip.Entities.csproj" />
   </ItemGroup>

@@ -8,12 +8,12 @@ using System.Threading.Tasks;
 
 namespace PersonelSozlesmeTakip.Repositories.Abstract
 {
-    public interface IGenericRepository<T> where T : BaseEntity<T>
+    public interface IGenericRepository<T>
     {
         List<T> GetDefault(Expression<Func<T, bool>> predicate);
 
         ICollection<T> GetAll();
-        Guid GetById(Guid Id);
+        T GetById(Guid Id);
 
         void Add(T entity);
         void Update(T entity);

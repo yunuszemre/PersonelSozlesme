@@ -18,9 +18,14 @@ namespace PersonelSozlesmeTakip.API
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
-            builder.Services.AddDbContext<PersonelSozlesmeContext>(options => options.UseSqlServer("Server=DESKTOP-BODOH2U\\SA; Database=UniDb; uid=sa; pwd=1234"));
+            builder.Services.AddDbContext<PersonelSozlesmeContext>(options => options.UseSqlServer("Server=DESKTOP-BODOH2U\\SA; Database=UniDb; uid=sa; pwd=1234;"));
 
-            builder.Services.AddScoped(typeof(IGenericService<>), typeof(GenericService<>));
+            
+            builder.Services.AddScoped<IUniversityService, UniversityService>();
+
+
+            
+            builder.Services.AddScoped<IUniversityRepository, UniversityRepository>();
             builder.Services.AddSwaggerGen();
 
             var app = builder.Build();

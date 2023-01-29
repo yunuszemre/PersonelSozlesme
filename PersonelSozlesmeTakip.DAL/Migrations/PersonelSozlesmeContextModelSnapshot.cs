@@ -39,8 +39,8 @@ namespace PersonelSozlesmeTakip.DAL.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
-                    b.Property<int>("RoleId")
-                        .HasColumnType("int");
+                    b.Property<Guid>("RoleId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.HasKey("Id");
 
@@ -202,11 +202,9 @@ namespace PersonelSozlesmeTakip.DAL.Migrations
 
             modelBuilder.Entity("PersonelSozlesmeTakip.Entities.Concreate.Role", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<DateTime>("CerateDate")
                         .HasColumnType("datetime2");
@@ -225,8 +223,8 @@ namespace PersonelSozlesmeTakip.DAL.Migrations
 
             modelBuilder.Entity("PersonelSozlesmeTakip.Entities.Concreate.RolePersonel", b =>
                 {
-                    b.Property<int>("RoleId")
-                        .HasColumnType("int");
+                    b.Property<Guid>("RoleId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<Guid>("PersonelId")
                         .HasColumnType("uniqueidentifier");

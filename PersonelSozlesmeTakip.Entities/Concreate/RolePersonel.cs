@@ -8,7 +8,7 @@ namespace PersonelSozlesmeTakip.Entities.Concreate
 {
     public class RolePersonel
     {
-        public int RoleId { get; set; }
+        public Guid RoleId { get; set; }
 
         public Role Role { get; set; }
 
