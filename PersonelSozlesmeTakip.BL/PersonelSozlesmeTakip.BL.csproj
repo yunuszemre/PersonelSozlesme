@@ -8,7 +8,12 @@
 
   <ItemGroup>
     <Folder Include="Abstract\" />
-    <Folder Include="Concreate\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PersonelSozlesmeTakip.DAL\PersonelSozlesmeTakip.DAL.csproj" />
+    <ProjectReference Include="..\PersonelSozlesmeTakip.Entities\PersonelSozlesmeTakip.Entities.csproj" />
+    <ProjectReference Include="..\PersonelSozlesmeTakip.Repositories\PersonelSozlesmeTakip.Repositories.csproj" />
   </ItemGroup>
 
 </Project>

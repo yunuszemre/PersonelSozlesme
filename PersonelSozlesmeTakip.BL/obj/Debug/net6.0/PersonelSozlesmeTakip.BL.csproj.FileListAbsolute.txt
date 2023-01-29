@@ -10,3 +10,12 @@ C:\Users\Yunus\source\repos\PersonelSoszlesmeTakip\PersonelSozlesmeTakip.BL\obj\
 C:\Users\Yunus\source\repos\PersonelSoszlesmeTakip\PersonelSozlesmeTakip.BL\obj\Debug\net6.0\refint\PersonelSozlesmeTakip.BL.dll
 C:\Users\Yunus\source\repos\PersonelSoszlesmeTakip\PersonelSozlesmeTakip.BL\obj\Debug\net6.0\PersonelSozlesmeTakip.BL.pdb
 C:\Users\Yunus\source\repos\PersonelSoszlesmeTakip\PersonelSozlesmeTakip.BL\obj\Debug\net6.0\ref\PersonelSozlesmeTakip.BL.dll
+C:\Users\Yunus\source\repos\PersonelSoszlesmeTakip\PersonelSozlesmeTakip.BL\bin\Debug\net6.0\PersonelSozlesmeTakip.Core.dll
+C:\Users\Yunus\source\repos\PersonelSoszlesmeTakip\PersonelSozlesmeTakip.BL\bin\Debug\net6.0\PersonelSozlesmeTakip.DAL.dll
+C:\Users\Yunus\source\repos\PersonelSoszlesmeTakip\PersonelSozlesmeTakip.BL\bin\Debug\net6.0\PersonelSozlesmeTakip.Entities.dll
+C:\Users\Yunus\source\repos\PersonelSoszlesmeTakip\PersonelSozlesmeTakip.BL\bin\Debug\net6.0\PersonelSozlesmeTakip.Repositories.dll
+C:\Users\Yunus\source\repos\PersonelSoszlesmeTakip\PersonelSozlesmeTakip.BL\bin\Debug\net6.0\PersonelSozlesmeTakip.DAL.pdb
+C:\Users\Yunus\source\repos\PersonelSoszlesmeTakip\PersonelSozlesmeTakip.BL\bin\Debug\net6.0\PersonelSozlesmeTakip.Entities.pdb
+C:\Users\Yunus\source\repos\PersonelSoszlesmeTakip\PersonelSozlesmeTakip.BL\bin\Debug\net6.0\PersonelSozlesmeTakip.Repositories.pdb
+C:\Users\Yunus\source\repos\PersonelSoszlesmeTakip\PersonelSozlesmeTakip.BL\bin\Debug\net6.0\PersonelSozlesmeTakip.Core.pdb
+C:\Users\Yunus\source\repos\PersonelSoszlesmeTakip\PersonelSozlesmeTakip.BL\obj\Debug\net6.0\PersonelSozlesmeTakip.BL.csproj.CopyComplete

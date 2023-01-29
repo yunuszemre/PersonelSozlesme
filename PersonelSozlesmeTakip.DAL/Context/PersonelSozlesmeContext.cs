@@ -12,6 +12,10 @@ namespace PersonelSozlesmeTakip.DAL.Context
 {
     public class PersonelSozlesmeContext : DbContext
     {
+        public PersonelSozlesmeContext(DbContextOptions options) : base(options)
+        {
+        }
+
         public DbSet<Personel> Personels { get; set; }
         public DbSet<Faculty> Faculties { get; set; }
 
