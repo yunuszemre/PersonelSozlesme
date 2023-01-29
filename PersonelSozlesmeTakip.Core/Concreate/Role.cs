@@ -11,7 +11,8 @@ namespace PersonelSozlesmeTakip.Core.Concreate
         SystemAdmin,
         UniversityAdmin,
         FacultyAdmin,
-        Personel
+        AcademicPersonel,
+        ManagementPersonel
 
     }
 }

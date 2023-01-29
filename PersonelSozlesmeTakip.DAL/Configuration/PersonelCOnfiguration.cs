@@ -13,7 +13,14 @@ namespace PersonelSozlesmeTakip.DAL.Configuration
     {
         public void Configure(EntityTypeBuilder<Personel> builder)
         {
-            throw new NotImplementedException();
+            builder.HasKey(x => x.Id);
+            builder.Property(x=>x.Email).HasMaxLength(100).IsRequired(false);
+            builder.Property(x=>x.Phone).HasMaxLength(20).IsRequired(false);
+            builder.Property(x=>x.Name).HasMaxLength(50).IsRequired(true);
+            builder.Property(x=>x.LastName).HasMaxLength(50).IsRequired(true);
+            builder.HasOne(x=>x.Faculty).WithMany(x1=>x1.Personels).HasForeignKey(x => x.Id);
+            
+
         }
     }
 }

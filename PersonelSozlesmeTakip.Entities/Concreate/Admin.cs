@@ -16,8 +16,8 @@ namespace PersonelSozlesmeTakip.Entities.Concreate
             this.Universities = new List<University>();
         }
         public Role Role { get; set; }
-        public List<University> Universities { get; set; }
+        public virtual List<University> Universities { get; set; }
 
-        public List<Faculty> Faculties { get; set; }
+        public virtual List<Faculty> Faculties { get; set; }
     }
 }

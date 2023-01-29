@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\PersonelSozlesmeTakip.WebUI.props" />
+</Project>

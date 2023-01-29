@@ -15,14 +15,21 @@ namespace PersonelSozlesmeTakip.Entities.Concreate
             this.Personels = new List<Personel>();
             this.Departments = new List<Department>();
         }
+        public Guid AdminId { get; set; }
 
+        public string? LogoPath { get; set; }
         public string Adress { get; set; }
-        [ForeignKey("Campus")]
+        public virtual Admin? Admin { get; set; }
+        
         public Guid CampusId { get; set; }
 
         public virtual Campus? Campus { get; set; }
 
-        public List<Personel> Personels { get; set; }
-        public List<Department> Departments { get; set; }
+        public Guid UniversityId { get; set; }
+
+        public virtual University University { get; set; }
+
+        public virtual List<Personel> Personels { get; set; }
+        public virtual List<Department> Departments { get; set; }
     }
 }
