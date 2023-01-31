@@ -16,6 +16,7 @@ namespace PersonelSozlesmeTakip.DAL.Configuration
             builder.HasKey(x => x.Id);
             builder.Property(x => x.Name).HasMaxLength(50).IsRequired(true);
             
+            
         }
     }
 }

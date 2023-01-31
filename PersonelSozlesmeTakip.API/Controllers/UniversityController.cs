@@ -1,7 +1,9 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Hosting;
 using PersonelSozlesmeTakip.BL.Abstract;
 using PersonelSozlesmeTakip.Entities.Concreate;
+
 
 namespace PersonelSozlesmeTakip.API.Controllers
 {
@@ -10,10 +12,12 @@ namespace PersonelSozlesmeTakip.API.Controllers
     public class UniversityController : ControllerBase
     {
         private readonly IUniversityService _service;
+        private readonly Microsoft.AspNetCore.Hosting.IHostingEnvironment _environment;
 
-        public UniversityController(IUniversityService service)
+        public UniversityController(IUniversityService service, Microsoft.AspNetCore.Hosting.IHostingEnvironment environment)
         {
             this._service = service;
+            this._environment = environment;
         }
 
         [HttpGet]
@@ -35,6 +39,29 @@ namespace PersonelSozlesmeTakip.API.Controllers
             {
                 return BadRequest("Girilen Id'ye sahip bir Üniversite bulunamadı");    
             }
+        }
+        [HttpPost]
+        public IActionResult CreateUniversity([FromBody]University university)
+        {
+            
+                
+
+                if (ModelState.IsValid)
+                {
+                    _service.Add(university);
+                    return Ok();
+
+                }
+                else
+                {
+                    return BadRequest();
+                }
+                
+                
+
+
+            
+            
         }
     }
 }

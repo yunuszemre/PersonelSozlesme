@@ -50,6 +50,7 @@ namespace PersonelSozlesmeTakip.DAL.Migrations
             modelBuilder.Entity("PersonelSozlesmeTakip.Entities.Concreate.Campus", b =>
                 {
                     b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<DateTime>("CerateDate")
@@ -68,12 +69,15 @@ namespace PersonelSozlesmeTakip.DAL.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("UniversityId");
+
                     b.ToTable("Campuses");
                 });
 
             modelBuilder.Entity("PersonelSozlesmeTakip.Entities.Concreate.Department", b =>
                 {
                     b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<DateTime>("CerateDate")
@@ -91,6 +95,8 @@ namespace PersonelSozlesmeTakip.DAL.Migrations
                         .HasColumnType("nvarchar(50)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("FacultyId");
 
                     b.ToTable("Departments");
                 });
@@ -116,6 +122,9 @@ namespace PersonelSozlesmeTakip.DAL.Migrations
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<Guid>("AdminId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("AdminId1")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Adress")
@@ -146,12 +155,15 @@ namespace PersonelSozlesmeTakip.DAL.Migrations
 
                     b.HasIndex("AdminId");
 
+                    b.HasIndex("AdminId1");
+
                     b.ToTable("Faculties");
                 });
 
             modelBuilder.Entity("PersonelSozlesmeTakip.Entities.Concreate.Personel", b =>
                 {
                     b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<DateTime>("CerateDate")
@@ -195,12 +207,15 @@ namespace PersonelSozlesmeTakip.DAL.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("FacultyId");
+
                     b.ToTable("Personels");
                 });
 
             modelBuilder.Entity("PersonelSozlesmeTakip.Entities.Concreate.University", b =>
                 {
                     b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<Guid>("AdminId")
@@ -227,6 +242,8 @@ namespace PersonelSozlesmeTakip.DAL.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("AdminId");
+
                     b.ToTable("Universities");
                 });
 
@@ -234,7 +251,7 @@ namespace PersonelSozlesmeTakip.DAL.Migrations
                 {
                     b.HasOne("PersonelSozlesmeTakip.Entities.Concreate.University", "University")
                         .WithMany("Campuses")
-                        .HasForeignKey("Id")
+                        .HasForeignKey("UniversityId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -245,7 +262,7 @@ namespace PersonelSozlesmeTakip.DAL.Migrations
                 {
                     b.HasOne("PersonelSozlesmeTakip.Entities.Concreate.Faculty", "Faculty")
                         .WithMany("Departments")
-                        .HasForeignKey("Id")
+                        .HasForeignKey("FacultyId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -273,19 +290,19 @@ namespace PersonelSozlesmeTakip.DAL.Migrations
 
             modelBuilder.Entity("PersonelSozlesmeTakip.Entities.Concreate.Faculty", b =>
                 {
-                    b.HasOne("PersonelSozlesmeTakip.Entities.Concreate.Admin", "Admin")
+                    b.HasOne("PersonelSozlesmeTakip.Entities.Concreate.University", "University")
                         .WithMany("Faculties")
                         .HasForeignKey("AdminId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("PersonelSozlesmeTakip.Entities.Concreate.Campus", "Campus")
+                    b.HasOne("PersonelSozlesmeTakip.Entities.Concreate.Admin", "Admin")
                         .WithMany("Faculties")
-                        .HasForeignKey("Id")
+                        .HasForeignKey("AdminId1")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("PersonelSozlesmeTakip.Entities.Concreate.University", "University")
+                    b.HasOne("PersonelSozlesmeTakip.Entities.Concreate.Campus", "Campus")
                         .WithMany("Faculties")
                         .HasForeignKey("Id")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -302,7 +319,7 @@ namespace PersonelSozlesmeTakip.DAL.Migrations
                 {
                     b.HasOne("PersonelSozlesmeTakip.Entities.Concreate.Faculty", "Faculty")
                         .WithMany("Personels")
-                        .HasForeignKey("Id")
+                        .HasForeignKey("FacultyId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -313,7 +330,7 @@ namespace PersonelSozlesmeTakip.DAL.Migrations
                 {
                     b.HasOne("PersonelSozlesmeTakip.Entities.Concreate.Admin", "Admin")
                         .WithMany("Universities")
-                        .HasForeignKey("Id")
+                        .HasForeignKey("AdminId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 

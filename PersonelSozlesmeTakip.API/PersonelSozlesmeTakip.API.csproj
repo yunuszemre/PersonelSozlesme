@@ -15,4 +15,8 @@
     <ProjectReference Include="..\PersonelSozlesmeTakip.Repositories\PersonelSozlesmeTakip.Repositories.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Uploads\" />
+  </ItemGroup>
+
 </Project>

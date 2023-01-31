@@ -16,7 +16,7 @@ namespace PersonelSozlesmeTakip.DAL.Configuration
             builder.HasKey(x => x.Id);
             builder.Property(x => x.Name).HasMaxLength(150).IsRequired(true);
             builder.Property(x => x.City).HasMaxLength(50).IsRequired(true);
-            builder.HasOne(x => x.Admin).WithMany(x1 => x1.Universities).HasForeignKey(x => x.Id);
+            builder.HasOne(x => x.Admin).WithMany(x1 => x1.Universities).HasForeignKey(x => x.AdminId);
         }
     }
 }

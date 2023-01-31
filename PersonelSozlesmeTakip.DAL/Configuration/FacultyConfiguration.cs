@@ -20,7 +20,7 @@ namespace PersonelSozlesmeTakip.DAL.Configuration
 
             builder.HasOne(x => x.Campus).WithMany(x1 => x1.Faculties).HasForeignKey(x => x.Id);
 
-            builder.HasOne(x => x.University).WithMany(x1 => x1.Faculties).HasForeignKey(x => x.Id);
+            builder.HasOne(x => x.University).WithMany(x1 => x1.Faculties).HasForeignKey(x => x.AdminId);
 
         }
     }
