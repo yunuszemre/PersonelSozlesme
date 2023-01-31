@@ -57,7 +57,6 @@ namespace PersonelSozlesmeTakip.DAL.Context
             modelBuilder.ApplyConfiguration(new FacultyConfiguration());
             modelBuilder.ApplyConfiguration(new CampusConfiguration());
             modelBuilder.ApplyConfiguration(new DepartmenPersonConfiguration());
-            modelBuilder.ApplyConfiguration(new RolePersonelConfiguration());
 
             base.OnModelCreating(modelBuilder);
         }

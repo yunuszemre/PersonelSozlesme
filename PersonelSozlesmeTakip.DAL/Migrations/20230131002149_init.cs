@@ -10,25 +10,11 @@ namespace PersonelSozlesmeTakip.DAL.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "Role",
-                columns: table => new
-                {
-                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    CerateDate = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    ModifiedDate = table.Column<DateTime>(type: "datetime2", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Role", x => x.Id);
-                });
-
-            migrationBuilder.CreateTable(
                 name: "Admins",
                 columns: table => new
                 {
                     Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    RoleId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    Role = table.Column<int>(type: "int", nullable: false),
                     Name = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
                     CerateDate = table.Column<DateTime>(type: "datetime2", nullable: false),
                     ModifiedDate = table.Column<DateTime>(type: "datetime2", nullable: false)
@@ -36,12 +22,6 @@ namespace PersonelSozlesmeTakip.DAL.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Admins", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_Admins_Role_RoleId",
-                        column: x => x.RoleId,
-                        principalTable: "Role",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateTable(
@@ -198,35 +178,6 @@ namespace PersonelSozlesmeTakip.DAL.Migrations
                         onDelete: ReferentialAction.Restrict);
                 });
 
-            migrationBuilder.CreateTable(
-                name: "RolePersonel",
-                columns: table => new
-                {
-                    RoleId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    PersonelId = table.Column<Guid>(type: "uniqueidentifier", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_RolePersonel", x => new { x.RoleId, x.PersonelId });
-                    table.ForeignKey(
-                        name: "FK_RolePersonel_Personels_PersonelId",
-                        column: x => x.PersonelId,
-                        principalTable: "Personels",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
-                    table.ForeignKey(
-                        name: "FK_RolePersonel_Role_RoleId",
-                        column: x => x.RoleId,
-                        principalTable: "Role",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
-                });
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Admins_RoleId",
-                table: "Admins",
-                column: "RoleId");
-
             migrationBuilder.CreateIndex(
                 name: "IX_DepartmentPerson_DepartmentId",
                 table: "DepartmentPerson",
@@ -236,20 +187,12 @@ namespace PersonelSozlesmeTakip.DAL.Migrations
                 name: "IX_Faculties_AdminId",
                 table: "Faculties",
                 column: "AdminId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_RolePersonel_PersonelId",
-                table: "RolePersonel",
-                column: "PersonelId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
                 name: "DepartmentPerson");
-
-            migrationBuilder.DropTable(
-                name: "RolePersonel");
 
             migrationBuilder.DropTable(
                 name: "Departments");
@@ -268,9 +211,6 @@ namespace PersonelSozlesmeTakip.DAL.Migrations
 
             migrationBuilder.DropTable(
                 name: "Admins");
-
-            migrationBuilder.DropTable(
-                name: "Role");
         }
     }
 }

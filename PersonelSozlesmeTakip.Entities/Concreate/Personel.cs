@@ -14,10 +14,9 @@ namespace PersonelSozlesmeTakip.Entities.Concreate
         public Personel()
         {
             this.Departments = new List<DepartmentPerson>();
-            this.Roles = new List<RolePersonel>();
         }
         
-        public List<RolePersonel> Roles { get; set; }
+        
         public string? Email { get; set; }
 
         public string LastName { get; set; }

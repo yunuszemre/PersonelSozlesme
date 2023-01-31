@@ -39,12 +39,10 @@ namespace PersonelSozlesmeTakip.DAL.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
-                    b.Property<Guid>("RoleId")
-                        .HasColumnType("uniqueidentifier");
+                    b.Property<int>("Role")
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("RoleId");
 
                     b.ToTable("Admins");
                 });
@@ -200,42 +198,6 @@ namespace PersonelSozlesmeTakip.DAL.Migrations
                     b.ToTable("Personels");
                 });
 
-            modelBuilder.Entity("PersonelSozlesmeTakip.Entities.Concreate.Role", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<DateTime>("CerateDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<DateTime>("ModifiedDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Role");
-                });
-
-            modelBuilder.Entity("PersonelSozlesmeTakip.Entities.Concreate.RolePersonel", b =>
-                {
-                    b.Property<Guid>("RoleId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<Guid>("PersonelId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.HasKey("RoleId", "PersonelId");
-
-                    b.HasIndex("PersonelId");
-
-                    b.ToTable("RolePersonel");
-                });
-
             modelBuilder.Entity("PersonelSozlesmeTakip.Entities.Concreate.University", b =>
                 {
                     b.Property<Guid>("Id")
@@ -266,17 +228,6 @@ namespace PersonelSozlesmeTakip.DAL.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Universities");
-                });
-
-            modelBuilder.Entity("PersonelSozlesmeTakip.Entities.Concreate.Admin", b =>
-                {
-                    b.HasOne("PersonelSozlesmeTakip.Entities.Concreate.Role", "Role")
-                        .WithMany()
-                        .HasForeignKey("RoleId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Role");
                 });
 
             modelBuilder.Entity("PersonelSozlesmeTakip.Entities.Concreate.Campus", b =>
@@ -358,25 +309,6 @@ namespace PersonelSozlesmeTakip.DAL.Migrations
                     b.Navigation("Faculty");
                 });
 
-            modelBuilder.Entity("PersonelSozlesmeTakip.Entities.Concreate.RolePersonel", b =>
-                {
-                    b.HasOne("PersonelSozlesmeTakip.Entities.Concreate.Personel", "Personel")
-                        .WithMany("Roles")
-                        .HasForeignKey("PersonelId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("PersonelSozlesmeTakip.Entities.Concreate.Role", "Role")
-                        .WithMany("Personels")
-                        .HasForeignKey("RoleId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Personel");
-
-                    b.Navigation("Role");
-                });
-
             modelBuilder.Entity("PersonelSozlesmeTakip.Entities.Concreate.University", b =>
                 {
                     b.HasOne("PersonelSozlesmeTakip.Entities.Concreate.Admin", "Admin")
@@ -415,13 +347,6 @@ namespace PersonelSozlesmeTakip.DAL.Migrations
             modelBuilder.Entity("PersonelSozlesmeTakip.Entities.Concreate.Personel", b =>
                 {
                     b.Navigation("Departments");
-
-                    b.Navigation("Roles");
-                });
-
-            modelBuilder.Entity("PersonelSozlesmeTakip.Entities.Concreate.Role", b =>
-                {
-                    b.Navigation("Personels");
                 });
 
             modelBuilder.Entity("PersonelSozlesmeTakip.Entities.Concreate.University", b =>
