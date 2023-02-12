@@ -20,6 +20,7 @@ namespace PersonelSozlesmeTakip.DAL.Configuration
             builder.Property(x=>x.Name).HasMaxLength(50).IsRequired(true);
             builder.Property(x=>x.LastName).HasMaxLength(50).IsRequired(true);
             builder.HasOne(x=>x.Faculty).WithMany(x1=>x1.Personels).HasForeignKey(x => x.FacultyId);
+            builder.HasOne(x => x.University).WithMany(x1 => x1.Personels).HasForeignKey(x => x.UniversityId);
             
 
         }

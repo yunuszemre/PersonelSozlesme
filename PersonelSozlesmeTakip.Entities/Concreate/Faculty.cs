@@ -10,16 +10,12 @@ namespace PersonelSozlesmeTakip.Entities.Concreate
 {
     public class Faculty : BaseEntity
     {
-        public Faculty()
-        {
-            this.Personels = new List<Personel>();
-            this.Departments = new List<Department>();
-        }
+        
         public Guid AdminId { get; set; }
-
+        public virtual Admin? Admin { get; set; }
         public string? LogoPath { get; set; }
         public string Adress { get; set; }
-        public virtual Admin? Admin { get; set; }
+        
         
         public Guid CampusId { get; set; }
 
@@ -31,5 +27,9 @@ namespace PersonelSozlesmeTakip.Entities.Concreate
 
         public virtual List<Personel> Personels { get; set; }
         public virtual List<Department> Departments { get; set; }
+        public override string ToString()
+        {
+            return $"{University.Name} {Name}";
+        }
     }
 }

@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace PersonelSozlesmeTakip.DAL.Migrations
 {
-    public partial class init : Migration
+    public partial class personalUniRelation : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -76,7 +76,6 @@ namespace PersonelSozlesmeTakip.DAL.Migrations
                     AdminId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     LogoPath = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Adress = table.Column<string>(type: "nvarchar(500)", maxLength: 500, nullable: true),
-                    AdminId1 = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     CampusId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     UniversityId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     Name = table.Column<string>(type: "nvarchar(128)", maxLength: 128, nullable: false),
@@ -87,8 +86,8 @@ namespace PersonelSozlesmeTakip.DAL.Migrations
                 {
                     table.PrimaryKey("PK_Faculties", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Faculties_Admins_AdminId1",
-                        column: x => x.AdminId1,
+                        name: "FK_Faculties_Admins_AdminId",
+                        column: x => x.AdminId,
                         principalTable: "Admins",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
@@ -99,8 +98,8 @@ namespace PersonelSozlesmeTakip.DAL.Migrations
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
-                        name: "FK_Faculties_Universities_AdminId",
-                        column: x => x.AdminId,
+                        name: "FK_Faculties_Universities_UniversityId",
+                        column: x => x.UniversityId,
                         principalTable: "Universities",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
@@ -137,6 +136,7 @@ namespace PersonelSozlesmeTakip.DAL.Migrations
                     ImagePath = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     IntegratedPhone = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     FacultyId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    UniversityId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     ContractEndDate = table.Column<DateTime>(type: "datetime2", nullable: true),
                     ContractStartDate = table.Column<DateTime>(type: "datetime2", nullable: false),
                     Phone = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: true),
@@ -151,6 +151,12 @@ namespace PersonelSozlesmeTakip.DAL.Migrations
                         name: "FK_Personels_Faculties_FacultyId",
                         column: x => x.FacultyId,
                         principalTable: "Faculties",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
+                    table.ForeignKey(
+                        name: "FK_Personels_Universities_UniversityId",
+                        column: x => x.UniversityId,
+                        principalTable: "Universities",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
                 });
@@ -200,14 +206,19 @@ namespace PersonelSozlesmeTakip.DAL.Migrations
                 column: "AdminId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Faculties_AdminId1",
+                name: "IX_Faculties_UniversityId",
                 table: "Faculties",
-                column: "AdminId1");
+                column: "UniversityId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Personels_FacultyId",
                 table: "Personels",
                 column: "FacultyId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Personels_UniversityId",
+                table: "Personels",
+                column: "UniversityId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Universities_AdminId",

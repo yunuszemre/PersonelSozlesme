@@ -1,6 +1,8 @@
-﻿using PersonelSozlesmeTakip.BL.Abstract;
+﻿using Microsoft.EntityFrameworkCore;
+using PersonelSozlesmeTakip.BL.Abstract;
 using PersonelSozlesmeTakip.DAL.Context;
 using PersonelSozlesmeTakip.Entities.Abstract;
+using PersonelSozlesmeTakip.Entities.Concreate;
 using PersonelSozlesmeTakip.Repositories.Abstract;
 using System;
 using System.Collections.Generic;
@@ -14,13 +16,14 @@ namespace PersonelSozlesmeTakip.BL.Concreate
     public class GenericService<T> : IGenericService<T> where T : BaseEntity
     {
         private readonly IGenericRepository<T> _repo;
-        
 
+        
         public GenericService(IGenericRepository<T> repo)
         {
             this._repo = repo;
             
         }
+        
         public void Add(T entiy)
         {
             _repo.Add(entiy);
@@ -32,6 +35,11 @@ namespace PersonelSozlesmeTakip.BL.Concreate
         }
 
         public ICollection<T> GetAll() => _repo.GetAll();
+
+        public IQueryable<T> GetAll(params Expression<Func<T, object>>[] include)
+        {
+            return _repo.GetAll(include);
+        }
 
         public T GetById(Guid id)
         {

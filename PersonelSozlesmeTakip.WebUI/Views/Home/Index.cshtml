@@ -1,8 +1,38 @@
-﻿@{
+﻿@using PersonelSozlesmeTakip.Entities.Concreate;
+@{
     ViewData["Title"] = "Home Page";
 }
+@model List<University>
 
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
+
+<table class="table table-striped-columns">
+    <thead>
+        <tr>
+            <th>Üniversite Adı</th>
+            <th>Şehir</th>
+            <th>Admin adı</th>
+            <th>Fakülte Sayısı</th>
+            <th>A.B.D sayısı</th>
+            <th>Kampüs Sayısı</th>
+            <th>İşlem</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Name</td>
+                <td>@item.City</td>
+                <td>@item.AdminId</td>
+                <td>@item.Faculties.Count</td>
+                <td>@item.Faculties.Count</td>
+                <td>@item.Campuses.Count</td>
+                <td><a asp-action="ShowUniDetail" asp-controller="Home" asp-area="" asp-route-id="@item.Id" class=" btn btn-dark">Görüntüle</a></td>
+            </tr>
+        }
+       </tbody>
+</table>

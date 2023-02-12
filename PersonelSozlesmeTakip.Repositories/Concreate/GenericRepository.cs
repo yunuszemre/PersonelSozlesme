@@ -54,6 +54,19 @@ namespace PersonelSozlesmeTakip.Repositories.Concreate
             }
         }
 
+        public IQueryable<T> GetAll(params Expression<Func<T, object>>[] includes)
+        {
+            var query = _context.Set<T>().AsQueryable();
+            if (includes != null)
+            {
+                query = includes.Aggregate(query, (current, include) => current.Include(include));
+            }
+            return query;
+        }
+
+        
+
+        
         public void Update(T entity)
         {
             _dbSet.Update(entity);

@@ -14,6 +14,7 @@ namespace PersonelSozlesmeTakip.Repositories.Abstract
 
         ICollection<T> GetAll();
         T GetById(Guid Id);
+        IQueryable<T> GetAll(params Expression<Func<T, object>>[] include);
 
         void Add(T entity);
         void Update(T entity);

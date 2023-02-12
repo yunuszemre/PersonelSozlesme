@@ -11,10 +11,7 @@ namespace PersonelSozlesmeTakip.Entities.Concreate
 {
     public class Personel : BaseEntity
     {
-        public Personel()
-        {
-            this.Departments = new List<DepartmentPerson>();
-        }
+        
         
         
         public string? Email { get; set; }
@@ -24,7 +21,10 @@ namespace PersonelSozlesmeTakip.Entities.Concreate
         public string? IntegratedPhone { get; set; }
 
         public Guid FacultyId { get; set; }
+        [ForeignKey("University")]
+        public Guid UniversityId { get; set; }
 
+        public University University { get; set; }
         public Faculty? Faculty { get; set; }
 
         public virtual ICollection<DepartmentPerson> Departments { get; set; }

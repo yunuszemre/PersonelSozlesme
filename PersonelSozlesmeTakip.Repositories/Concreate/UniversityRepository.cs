@@ -19,5 +19,6 @@ namespace PersonelSozlesmeTakip.Repositories.Concreate
 
             this.context = context;
         }
+        
     }
 }

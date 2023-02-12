@@ -1,0 +1,48 @@
+﻿@using PersonelSozlesmeTakip.Entities.Concreate;
+
+@{
+    ViewData["Title"] = "CreatePersonel";
+}
+@model Personel
+<h1>CreatePersonel</h1>
+
+<form asp-action="CreatePersonel" asp-controller="Home" asp-area="" method="post" class="row g-3">
+    <div class="col-md-6">
+        <label asp-for="Name"   class="form-label">İsim</label>
+        <input asp-for="Name"  type="text" class="form-control">
+    </div>
+    <div class="col-md-6">
+        <label asp-for="LastName"  class="form-label">Soyisim</label>
+        <input asp-for="LastName" type="text" class="form-control" >
+    </div>
+    <div class="col-md-6">
+        <label asp-for="Email"  class="form-label">Password</label>
+        <input asp-for="Email" type="text" class="form-control" id="inputPassword4">
+    </div>
+    <div class="col-12">
+        <label asp-for="Phone"  class="form-label">GSM</label>
+        <input asp-for="Phone" type="tel" class="form-control" >
+    </div>
+    <div class="col-12">
+        <label asp-for="IntegratedPhone"  class="form-label">Dahili</label>
+        <input asp-for="IntegratedPhone" type="tel" class="form-control" >
+    </div>
+    <div class="col-md-6">
+        <label asp-for="ContractStartDate"  class="form-label">City</label>
+        <input asp-for="ContractStartDate" type="date" class="form-control" >
+    </div>
+    <div class="col-md-2">
+        <label asp-for="ContractEndDate"  class="form-label">Zip</label>
+        <input asp-for="ContractEndDate" type="date" class="form-control" >
+    </div>
+    <div class="col-md-4">
+        <label for="inputState" class="form-label">State</label>
+        <select id="inputState" class="form-select">
+            <option selected>Choose...</option>
+            <option>...</option>
+        </select>
+    </div>
+    <div class="col-12">
+        <button type="submit" class="btn btn-primary">Oluştur</button>
+    </div>
+</form>

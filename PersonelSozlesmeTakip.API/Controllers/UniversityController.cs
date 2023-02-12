@@ -23,45 +23,40 @@ namespace PersonelSozlesmeTakip.API.Controllers
         [HttpGet]
         public IActionResult GetAll()
         {
-
-            return Ok(_service.GetAll());
+            var universities = _service.GetAll(x => x.Faculties, x => x.Admin, x => x.Campuses).ToList();
+            return Ok(universities);
         }
 
         [HttpGet]
         public IActionResult GetById(Guid Id)
         {
             var entity = _service.GetById(Id);
-            if (entity!=null)
+            if (entity != null)
             {
                 return Ok(entity);
             }
             else
             {
-                return BadRequest("Girilen Id'ye sahip bir Üniversite bulunamadı");    
+                return BadRequest("Girilen Id'ye sahip bir Üniversite bulunamadı");
             }
         }
         [HttpPost]
-        public IActionResult CreateUniversity([FromBody]University university)
+        public IActionResult CreateUniversity([FromBody] University university)
         {
-            
-                
-
-                if (ModelState.IsValid)
-                {
-                    _service.Add(university);
-                    return Ok();
-
-                }
-                else
-                {
-                    return BadRequest();
-                }
-                
-                
 
 
-            
-            
+
+            if (ModelState.IsValid)
+            {
+                _service.Add(university);
+                return Ok();
+
+            }
+            else
+            {
+                return BadRequest();
+            }
+
         }
     }
 }

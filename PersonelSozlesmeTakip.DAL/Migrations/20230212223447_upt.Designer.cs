@@ -12,8 +12,8 @@ using PersonelSozlesmeTakip.DAL.Context;
 namespace PersonelSozlesmeTakip.DAL.Migrations
 {
     [DbContext(typeof(PersonelSozlesmeContext))]
-    [Migration("20230131012828_init")]
-    partial class init
+    [Migration("20230212223447_upt")]
+    partial class upt
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -121,12 +121,10 @@ namespace PersonelSozlesmeTakip.DAL.Migrations
             modelBuilder.Entity("PersonelSozlesmeTakip.Entities.Concreate.Faculty", b =>
                 {
                     b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<Guid>("AdminId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<Guid>("AdminId1")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Adress")
@@ -157,7 +155,9 @@ namespace PersonelSozlesmeTakip.DAL.Migrations
 
                     b.HasIndex("AdminId");
 
-                    b.HasIndex("AdminId1");
+                    b.HasIndex("CampusId");
+
+                    b.HasIndex("UniversityId");
 
                     b.ToTable("Faculties");
                 });
@@ -207,9 +207,14 @@ namespace PersonelSozlesmeTakip.DAL.Migrations
                         .HasMaxLength(20)
                         .HasColumnType("nvarchar(20)");
 
+                    b.Property<Guid>("UniversityId")
+                        .HasColumnType("uniqueidentifier");
+
                     b.HasKey("Id");
 
                     b.HasIndex("FacultyId");
+
+                    b.HasIndex("UniversityId");
 
                     b.ToTable("Personels");
                 });
@@ -292,21 +297,21 @@ namespace PersonelSozlesmeTakip.DAL.Migrations
 
             modelBuilder.Entity("PersonelSozlesmeTakip.Entities.Concreate.Faculty", b =>
                 {
-                    b.HasOne("PersonelSozlesmeTakip.Entities.Concreate.University", "University")
+                    b.HasOne("PersonelSozlesmeTakip.Entities.Concreate.Admin", "Admin")
                         .WithMany("Faculties")
                         .HasForeignKey("AdminId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("PersonelSozlesmeTakip.Entities.Concreate.Admin", "Admin")
+                    b.HasOne("PersonelSozlesmeTakip.Entities.Concreate.Campus", "Campus")
                         .WithMany("Faculties")
-                        .HasForeignKey("AdminId1")
+                        .HasForeignKey("CampusId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("PersonelSozlesmeTakip.Entities.Concreate.Campus", "Campus")
+                    b.HasOne("PersonelSozlesmeTakip.Entities.Concreate.University", "University")
                         .WithMany("Faculties")
-                        .HasForeignKey("Id")
+                        .HasForeignKey("UniversityId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -325,7 +330,15 @@ namespace PersonelSozlesmeTakip.DAL.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("PersonelSozlesmeTakip.Entities.Concreate.University", "University")
+                        .WithMany("Personels")
+                        .HasForeignKey("UniversityId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.Navigation("Faculty");
+
+                    b.Navigation("University");
                 });
 
             modelBuilder.Entity("PersonelSozlesmeTakip.Entities.Concreate.University", b =>
@@ -373,6 +386,8 @@ namespace PersonelSozlesmeTakip.DAL.Migrations
                     b.Navigation("Campuses");
 
                     b.Navigation("Faculties");
+
+                    b.Navigation("Personels");
                 });
 #pragma warning restore 612, 618
         }

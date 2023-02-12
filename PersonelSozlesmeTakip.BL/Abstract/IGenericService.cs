@@ -1,4 +1,5 @@
 ﻿using PersonelSozlesmeTakip.Entities.Abstract;
+using PersonelSozlesmeTakip.Entities.Concreate;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,6 +17,7 @@ namespace PersonelSozlesmeTakip.BL.Abstract
         List<T> GetDefault(Expression<Func<T, bool>> predicate);
 
        ICollection<T> GetAll();
+        IQueryable<T> GetAll(params Expression<Func<T, object>>[] include);
 
         void Add(T entiy);
 

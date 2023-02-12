@@ -10,11 +10,7 @@ namespace PersonelSozlesmeTakip.Entities.Concreate
 {
     public class Admin : BaseEntity
     {
-        public Admin()
-        {
-            this.Faculties = new List<Faculty>();
-            this.Universities = new List<University>();
-        }
+        
         public Role Role { get; set; }
         public virtual List<University> Universities { get; set; }
 

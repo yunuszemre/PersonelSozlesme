@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "70b21y0nFmmDLV8OOSdW1He1Da0xONHAI7/sP0aEHvxivZWB64Hq9LbGs2c+ycDeTKTktixWiKOTuI+WDTSy7g==",
+  "dgSpecHash": "Q0swlMzXU3ZPLcv/aZbKfAN355svHzrHmteWueysnweBFBNoV76A1/LepyDeziHHvcx4mmIc3+7GXGa9I3irdQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Yunus\\source\\repos\\PersonelSoszlesmeTakip\\PersonelSozlesmeTakip.DAL\\PersonelSozlesmeTakip.DAL.csproj",
+  "projectFilePath": "C:\\Users\\Yunus\\Desktop\\UniSozlesme\\PersonelSozlesmeTakip.DAL\\PersonelSozlesmeTakip.DAL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Yunus\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Yunus\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

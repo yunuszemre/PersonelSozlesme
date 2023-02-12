@@ -1,0 +1,104 @@
+﻿@using PersonelSozlesmeTakip.Entities.Concreate;
+
+@{
+    ViewData["Title"] = "PersonelList";
+}
+@model List<Personel>
+<h1>PersonelList</h1>
+
+<table class="table table-striped-columns p-1" style="width: 100%">
+    <thead>
+        <tr>
+            <th>Personel Adı</th>
+            <th>Üniversite Adı</th>
+            <th>Fakülte Adı</th>
+            <th>Bölüm Adı</th>
+            <th>A.B.D</th>
+            <th>Sözleşme Başlangıç Tarihi</th>
+            <th>Sözleşme Bitiş Tarihi</th>
+            <th>Sözleşma Kalan Gün Sayısı</th>
+            <th>İşlemler</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            TimeSpan totalDays = item.ContractEndDate.Value - DateTime.Now;
+            if (totalDays.TotalDays < 7)
+            {
+                <tr class="bg text-light bg-danger">
+                    <td>@item.Name @item.LastName</td>
+                    <td>@item.University.Name</td>
+                    <td>@item.Faculty.Name</td>
+                    <td></td>
+                    <td></td>
+                    <td>@item.ContractStartDate</td>
+                    <td>@item.ContractEndDate</td>
+                    <td>@totalDays.TotalDays.ToString("0.00")</td>
+                    <td>
+                        <a asp-action="EditPersonel" asp-controller="Home" asp-area="" asp-route-id="@item.Id" class=" btn btn-dark">   <i class="bi bi-pencil-square"></i></a>
+                        <a asp-action="PersonelDetail" asp-controller="Home" asp-area="" asp-route-id="@item.Id" class=" btn btn-light"><i class="bi bi-eye-fill"></i></a>
+
+                    </td>
+                </tr>
+            }
+            else if (totalDays.TotalDays < 14)
+            {
+                <tr class="bg text-dark bg-warning">
+                    <td>@item.Name @item.LastName</td>
+                    <td>@item.University.Name</td>
+                    <td>@item.Faculty.Name</td>
+                    <td></td>
+                    <td></td>
+                    <td>@item.ContractStartDate</td>
+                    <td>@item.ContractEndDate</td>
+                    <td>@totalDays.TotalDays.ToString("0.00")</td>
+                     <td>
+                        <a asp-action="EditPersonel" asp-controller="Home" asp-area="" asp-route-id="@item.Id" class=" btn btn-dark">   <i class="bi bi-pencil-square"></i></a>
+                        <a asp-action="PersonelDetail" asp-controller="Home" asp-area="" asp-route-id="@item.Id" class=" btn btn-light"><i class="bi bi-eye-fill"></i></a>
+
+                    </td>
+                </tr>
+            }
+            else if (totalDays.TotalDays < 30)
+            {
+                <tr class="bg text-light bg-primary">
+                    <td>@item.Name</td>
+                    <td>@item.University.Name</td>
+                    <td>@item.Faculty.Name</td>
+                    <td></td>
+                    <td></td>
+                    <td>@item.ContractStartDate</td>
+                    <td>@item.ContractEndDate</td>
+                    <td >@totalDays.TotalDays.ToString("0.00")</td>
+                    <td>
+                        <a asp-action="EditPersonel" asp-controller="Home" asp-area="" asp-route-id="@item.Id" class=" btn btn-dark">   <i class="bi bi-pencil-square"></i></a>
+                        <a asp-action="PersonelDetail" asp-controller="Home" asp-area="" asp-route-id="@item.Id" class=" btn btn-light"><i class="bi bi-eye-fill"></i></a>
+
+                    </td>>
+                </tr>
+            }
+            else
+            {
+                <tr>
+                    <td>@item.Name</td>
+                    <td>@item.University.Name</td>
+                    <td>@item.Faculty.Name</td>
+                    <td></td>
+                    <td></td>
+                    <td>@item.ContractStartDate</td>
+                    <td>@item.ContractEndDate</td>
+                    <td>@totalDays.TotalDays.ToString("0.00")</td>
+                    <td>
+                        <a asp-action="EditPersonel" asp-controller="Home" asp-area="" asp-route-id="@item.Id" class=" btn btn-dark">   <i class="bi bi-pencil-square"></i></a>
+                        <a asp-action="PersonelDetail" asp-controller="Home" asp-area="" asp-route-id="@item.Id" class=" btn btn-light"><i class="bi bi-eye-fill"></i></a>
+
+                    </td>
+                </tr>
+            }
+
+        }
+
+
+    </tbody>
+</table>

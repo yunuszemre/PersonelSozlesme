@@ -14,7 +14,7 @@ namespace PersonelSozlesmeTakip.DAL
         public PersonelSozlesmeContext CreateDbContext(string[] args)
         {
             var optionsBuilder = new DbContextOptionsBuilder<PersonelSozlesmeContext>();
-            optionsBuilder.UseSqlServer("Server=DESKTOP-BODOH2U\\SA; Database=UniDb; uid = sa; pwd=1234;");
+            optionsBuilder.UseSqlServer("Server=DESKTOP-VA3Q2CE\\YUNUS; Database=UniDb; uid = sa; pwd=1234;");
 
             return new PersonelSozlesmeContext(optionsBuilder.Options);
         }

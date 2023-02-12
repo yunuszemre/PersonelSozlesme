@@ -9,13 +9,10 @@ namespace PersonelSozlesmeTakip.Entities.Concreate
 {
     public class Campus : BaseEntity
     {
-        public Campus()
-        {
-            this.Faculties = new List<Faculty>();
-        }
+        
         public Guid UniversityId { get; set; }
 
-        public virtual University University { get; set; }
+        public virtual University? University { get; set; }
 
         public virtual List<Faculty> Faculties { get; set; }
 

@@ -1,17 +1,82 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Yunus\\source\\repos\\PersonelSoszlesmeTakip\\PersonelSozlesmeTakip.WebUI\\PersonelSozlesmeTakip.WebUI.csproj": {}
+    "C:\\Users\\Yunus\\Desktop\\UniSozlesme\\PersonelSozlesmeTakip.WebUI\\PersonelSozlesmeTakip.WebUI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Yunus\\source\\repos\\PersonelSoszlesmeTakip\\PersonelSozlesmeTakip.WebUI\\PersonelSozlesmeTakip.WebUI.csproj": {
+    "C:\\Users\\Yunus\\Desktop\\UniSozlesme\\PersonelSozlesmeTakip.BL\\PersonelSozlesmeTakip.BL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Yunus\\source\\repos\\PersonelSoszlesmeTakip\\PersonelSozlesmeTakip.WebUI\\PersonelSozlesmeTakip.WebUI.csproj",
-        "projectName": "PersonelSozlesmeTakip.WebUI",
-        "projectPath": "C:\\Users\\Yunus\\source\\repos\\PersonelSoszlesmeTakip\\PersonelSozlesmeTakip.WebUI\\PersonelSozlesmeTakip.WebUI.csproj",
+        "projectUniqueName": "C:\\Users\\Yunus\\Desktop\\UniSozlesme\\PersonelSozlesmeTakip.BL\\PersonelSozlesmeTakip.BL.csproj",
+        "projectName": "PersonelSozlesmeTakip.BL",
+        "projectPath": "C:\\Users\\Yunus\\Desktop\\UniSozlesme\\PersonelSozlesmeTakip.BL\\PersonelSozlesmeTakip.BL.csproj",
         "packagesPath": "C:\\Users\\Yunus\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Yunus\\source\\repos\\PersonelSoszlesmeTakip\\PersonelSozlesmeTakip.WebUI\\obj\\",
+        "outputPath": "C:\\Users\\Yunus\\Desktop\\UniSozlesme\\PersonelSozlesmeTakip.BL\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Yunus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\Yunus\\Desktop\\UniSozlesme\\PersonelSozlesmeTakip.DAL\\PersonelSozlesmeTakip.DAL.csproj": {
+                "projectPath": "C:\\Users\\Yunus\\Desktop\\UniSozlesme\\PersonelSozlesmeTakip.DAL\\PersonelSozlesmeTakip.DAL.csproj"
+              },
+              "C:\\Users\\Yunus\\Desktop\\UniSozlesme\\PersonelSozlesmeTakip.Entities\\PersonelSozlesmeTakip.Entities.csproj": {
+                "projectPath": "C:\\Users\\Yunus\\Desktop\\UniSozlesme\\PersonelSozlesmeTakip.Entities\\PersonelSozlesmeTakip.Entities.csproj"
+              },
+              "C:\\Users\\Yunus\\Desktop\\UniSozlesme\\PersonelSozlesmeTakip.Repositories\\PersonelSozlesmeTakip.Repositories.csproj": {
+                "projectPath": "C:\\Users\\Yunus\\Desktop\\UniSozlesme\\PersonelSozlesmeTakip.Repositories\\PersonelSozlesmeTakip.Repositories.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Yunus\\Desktop\\UniSozlesme\\PersonelSozlesmeTakip.Core\\PersonelSozlesmeTakip.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Yunus\\Desktop\\UniSozlesme\\PersonelSozlesmeTakip.Core\\PersonelSozlesmeTakip.Core.csproj",
+        "projectName": "PersonelSozlesmeTakip.Core",
+        "projectPath": "C:\\Users\\Yunus\\Desktop\\UniSozlesme\\PersonelSozlesmeTakip.Core\\PersonelSozlesmeTakip.Core.csproj",
+        "packagesPath": "C:\\Users\\Yunus\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Yunus\\Desktop\\UniSozlesme\\PersonelSozlesmeTakip.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Yunus\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,6 +93,273 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Yunus\\Desktop\\UniSozlesme\\PersonelSozlesmeTakip.DAL\\PersonelSozlesmeTakip.DAL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Yunus\\Desktop\\UniSozlesme\\PersonelSozlesmeTakip.DAL\\PersonelSozlesmeTakip.DAL.csproj",
+        "projectName": "PersonelSozlesmeTakip.DAL",
+        "projectPath": "C:\\Users\\Yunus\\Desktop\\UniSozlesme\\PersonelSozlesmeTakip.DAL\\PersonelSozlesmeTakip.DAL.csproj",
+        "packagesPath": "C:\\Users\\Yunus\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Yunus\\Desktop\\UniSozlesme\\PersonelSozlesmeTakip.DAL\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Yunus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\Yunus\\Desktop\\UniSozlesme\\PersonelSozlesmeTakip.Entities\\PersonelSozlesmeTakip.Entities.csproj": {
+                "projectPath": "C:\\Users\\Yunus\\Desktop\\UniSozlesme\\PersonelSozlesmeTakip.Entities\\PersonelSozlesmeTakip.Entities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.13, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.13, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.13, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.13, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Yunus\\Desktop\\UniSozlesme\\PersonelSozlesmeTakip.Entities\\PersonelSozlesmeTakip.Entities.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Yunus\\Desktop\\UniSozlesme\\PersonelSozlesmeTakip.Entities\\PersonelSozlesmeTakip.Entities.csproj",
+        "projectName": "PersonelSozlesmeTakip.Entities",
+        "projectPath": "C:\\Users\\Yunus\\Desktop\\UniSozlesme\\PersonelSozlesmeTakip.Entities\\PersonelSozlesmeTakip.Entities.csproj",
+        "packagesPath": "C:\\Users\\Yunus\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Yunus\\Desktop\\UniSozlesme\\PersonelSozlesmeTakip.Entities\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Yunus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\Yunus\\Desktop\\UniSozlesme\\PersonelSozlesmeTakip.Core\\PersonelSozlesmeTakip.Core.csproj": {
+                "projectPath": "C:\\Users\\Yunus\\Desktop\\UniSozlesme\\PersonelSozlesmeTakip.Core\\PersonelSozlesmeTakip.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Yunus\\Desktop\\UniSozlesme\\PersonelSozlesmeTakip.Repositories\\PersonelSozlesmeTakip.Repositories.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Yunus\\Desktop\\UniSozlesme\\PersonelSozlesmeTakip.Repositories\\PersonelSozlesmeTakip.Repositories.csproj",
+        "projectName": "PersonelSozlesmeTakip.Repositories",
+        "projectPath": "C:\\Users\\Yunus\\Desktop\\UniSozlesme\\PersonelSozlesmeTakip.Repositories\\PersonelSozlesmeTakip.Repositories.csproj",
+        "packagesPath": "C:\\Users\\Yunus\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Yunus\\Desktop\\UniSozlesme\\PersonelSozlesmeTakip.Repositories\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Yunus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\Yunus\\Desktop\\UniSozlesme\\PersonelSozlesmeTakip.DAL\\PersonelSozlesmeTakip.DAL.csproj": {
+                "projectPath": "C:\\Users\\Yunus\\Desktop\\UniSozlesme\\PersonelSozlesmeTakip.DAL\\PersonelSozlesmeTakip.DAL.csproj"
+              },
+              "C:\\Users\\Yunus\\Desktop\\UniSozlesme\\PersonelSozlesmeTakip.Entities\\PersonelSozlesmeTakip.Entities.csproj": {
+                "projectPath": "C:\\Users\\Yunus\\Desktop\\UniSozlesme\\PersonelSozlesmeTakip.Entities\\PersonelSozlesmeTakip.Entities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Yunus\\Desktop\\UniSozlesme\\PersonelSozlesmeTakip.WebUI\\PersonelSozlesmeTakip.WebUI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Yunus\\Desktop\\UniSozlesme\\PersonelSozlesmeTakip.WebUI\\PersonelSozlesmeTakip.WebUI.csproj",
+        "projectName": "PersonelSozlesmeTakip.WebUI",
+        "projectPath": "C:\\Users\\Yunus\\Desktop\\UniSozlesme\\PersonelSozlesmeTakip.WebUI\\PersonelSozlesmeTakip.WebUI.csproj",
+        "packagesPath": "C:\\Users\\Yunus\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Yunus\\Desktop\\UniSozlesme\\PersonelSozlesmeTakip.WebUI\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Yunus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\Yunus\\Desktop\\UniSozlesme\\PersonelSozlesmeTakip.BL\\PersonelSozlesmeTakip.BL.csproj": {
+                "projectPath": "C:\\Users\\Yunus\\Desktop\\UniSozlesme\\PersonelSozlesmeTakip.BL\\PersonelSozlesmeTakip.BL.csproj"
+              },
+              "C:\\Users\\Yunus\\Desktop\\UniSozlesme\\PersonelSozlesmeTakip.DAL\\PersonelSozlesmeTakip.DAL.csproj": {
+                "projectPath": "C:\\Users\\Yunus\\Desktop\\UniSozlesme\\PersonelSozlesmeTakip.DAL\\PersonelSozlesmeTakip.DAL.csproj"
+              },
+              "C:\\Users\\Yunus\\Desktop\\UniSozlesme\\PersonelSozlesmeTakip.Entities\\PersonelSozlesmeTakip.Entities.csproj": {
+                "projectPath": "C:\\Users\\Yunus\\Desktop\\UniSozlesme\\PersonelSozlesmeTakip.Entities\\PersonelSozlesmeTakip.Entities.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -64,7 +396,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }

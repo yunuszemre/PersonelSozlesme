@@ -1,0 +1,17 @@
+C:\Users\Yunus\Desktop\UniSozlesme\UniSozlesmeWinUI\obj\Debug\net6.0-windows\UniSozlesmeWinUI.csproj.AssemblyReference.cache
+C:\Users\Yunus\Desktop\UniSozlesme\UniSozlesmeWinUI\obj\Debug\net6.0-windows\UniSozlesmeWinUI.Form1.resources
+C:\Users\Yunus\Desktop\UniSozlesme\UniSozlesmeWinUI\obj\Debug\net6.0-windows\UniSozlesmeWinUI.csproj.GenerateResource.cache
+C:\Users\Yunus\Desktop\UniSozlesme\UniSozlesmeWinUI\obj\Debug\net6.0-windows\UniSozlesmeWinUI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Yunus\Desktop\UniSozlesme\UniSozlesmeWinUI\obj\Debug\net6.0-windows\UniSozlesmeWinUI.AssemblyInfoInputs.cache
+C:\Users\Yunus\Desktop\UniSozlesme\UniSozlesmeWinUI\obj\Debug\net6.0-windows\UniSozlesmeWinUI.AssemblyInfo.cs
+C:\Users\Yunus\Desktop\UniSozlesme\UniSozlesmeWinUI\obj\Debug\net6.0-windows\UniSozlesmeWinUI.csproj.CoreCompileInputs.cache
+C:\Users\Yunus\Desktop\UniSozlesme\UniSozlesmeWinUI\bin\Debug\net6.0-windows\UniSozlesmeWinUI.exe
+C:\Users\Yunus\Desktop\UniSozlesme\UniSozlesmeWinUI\bin\Debug\net6.0-windows\UniSozlesmeWinUI.deps.json
+C:\Users\Yunus\Desktop\UniSozlesme\UniSozlesmeWinUI\bin\Debug\net6.0-windows\UniSozlesmeWinUI.runtimeconfig.json
+C:\Users\Yunus\Desktop\UniSozlesme\UniSozlesmeWinUI\bin\Debug\net6.0-windows\UniSozlesmeWinUI.dll
+C:\Users\Yunus\Desktop\UniSozlesme\UniSozlesmeWinUI\bin\Debug\net6.0-windows\UniSozlesmeWinUI.pdb
+C:\Users\Yunus\Desktop\UniSozlesme\UniSozlesmeWinUI\obj\Debug\net6.0-windows\UniSozlesmeWinUI.dll
+C:\Users\Yunus\Desktop\UniSozlesme\UniSozlesmeWinUI\obj\Debug\net6.0-windows\refint\UniSozlesmeWinUI.dll
+C:\Users\Yunus\Desktop\UniSozlesme\UniSozlesmeWinUI\obj\Debug\net6.0-windows\UniSozlesmeWinUI.pdb
+C:\Users\Yunus\Desktop\UniSozlesme\UniSozlesmeWinUI\obj\Debug\net6.0-windows\UniSozlesmeWinUI.genruntimeconfig.cache
+C:\Users\Yunus\Desktop\UniSozlesme\UniSozlesmeWinUI\obj\Debug\net6.0-windows\ref\UniSozlesmeWinUI.dll

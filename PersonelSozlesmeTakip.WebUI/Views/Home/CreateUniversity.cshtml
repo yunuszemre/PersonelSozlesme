@@ -1,0 +1,19 @@
+﻿@using PersonelSozlesmeTakip.Entities.Concreate;
+
+@{
+    ViewData["Title"] = "CreateUniversity";
+}
+@model University
+<h1>CreateUniversity</h1>
+
+<form asp-action="CreateUniversity" asp-controller="Home" method="post">
+    <label class="form-control" asp-for="City">Şehir</label>
+    <input class="form-control" type="text" asp-for="City"/>
+    <label class="form-control" asp-for="AdminId">AdminId</label>
+    <input class="form-control" type="text" asp-for="AdminId" />
+    <label class="form-control" asp-for="LogoPath">Logo</label>
+    <input class="form-control" type="text" asp-for="LogoPath" />
+    <label class="form-control" asp-for="Name">Üniversite Adı</label>
+    <input class="form-control" type="text" asp-for="Name"  />
+    <button class="btn btn-primary" type="submit">Ekle</button>
+</form>

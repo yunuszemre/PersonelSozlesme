@@ -1,0 +1,13 @@
+﻿@using PersonelSozlesmeTakip.Entities.Concreate;
+
+@{
+    ViewData["Title"] = "EditPersonel";
+}
+@model Personel
+<h1>EditPersonel</h1>
+
+<label class="form-control" asp-for="Name">@Model.Name</label>
+<label class="form-control" asp-for="LastName">@Model.LastName</label>
+<label class="form-control" asp-for="University.Name">@ViewBag.Uni.Name</label>
+<label class="form-control" asp-for="ContractEndDate">@Model.ContractEndDate.Value</label>
+<label class="form-control" asp-for="Email">@Model.Email</label>

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "mWKFqlt/AtycFHpJ38vKmM2T420Hco9JkwexbZy8BfXjsrRIG0tbFTUyELgFjlZgJ5gXgqhN5PSCiX8rq1NT6w==",
+  "dgSpecHash": "KQxV/TRwq6Y3LrFk1L0EVAFPRp9Df/RHs2pJuxow0SRDKi5vuXXyE5HKSXm5Q1nqGo7j2Tf9ianP+4pDOrpY+A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Yunus\\source\\repos\\PersonelSoszlesmeTakip\\PersonelSozlesmeTakip.BL\\PersonelSozlesmeTakip.BL.csproj",
+  "projectFilePath": "C:\\Users\\Yunus\\Desktop\\UniSozlesme\\PersonelSozlesmeTakip.BL\\PersonelSozlesmeTakip.BL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Yunus\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\Yunus\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",

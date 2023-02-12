@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Yunus\\source\\repos\\PersonelSoszlesmeTakip\\PersonelSozlesmeTakip.API\\PersonelSozlesmeTakip.API.csproj": {}
+    "C:\\Users\\Yunus\\Desktop\\UniSozlesme\\PersonelSozlesmeTakip.API\\PersonelSozlesmeTakip.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Yunus\\source\\repos\\PersonelSoszlesmeTakip\\PersonelSozlesmeTakip.API\\PersonelSozlesmeTakip.API.csproj": {
+    "C:\\Users\\Yunus\\Desktop\\UniSozlesme\\PersonelSozlesmeTakip.API\\PersonelSozlesmeTakip.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Yunus\\source\\repos\\PersonelSoszlesmeTakip\\PersonelSozlesmeTakip.API\\PersonelSozlesmeTakip.API.csproj",
+        "projectUniqueName": "C:\\Users\\Yunus\\Desktop\\UniSozlesme\\PersonelSozlesmeTakip.API\\PersonelSozlesmeTakip.API.csproj",
         "projectName": "PersonelSozlesmeTakip.API",
-        "projectPath": "C:\\Users\\Yunus\\source\\repos\\PersonelSoszlesmeTakip\\PersonelSozlesmeTakip.API\\PersonelSozlesmeTakip.API.csproj",
+        "projectPath": "C:\\Users\\Yunus\\Desktop\\UniSozlesme\\PersonelSozlesmeTakip.API\\PersonelSozlesmeTakip.API.csproj",
         "packagesPath": "C:\\Users\\Yunus\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Yunus\\source\\repos\\PersonelSoszlesmeTakip\\PersonelSozlesmeTakip.API\\obj\\",
+        "outputPath": "C:\\Users\\Yunus\\Desktop\\UniSozlesme\\PersonelSozlesmeTakip.API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Yunus\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,11 +28,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Yunus\\source\\repos\\PersonelSoszlesmeTakip\\PersonelSozlesmeTakip.BL\\PersonelSozlesmeTakip.BL.csproj": {
-                "projectPath": "C:\\Users\\Yunus\\source\\repos\\PersonelSoszlesmeTakip\\PersonelSozlesmeTakip.BL\\PersonelSozlesmeTakip.BL.csproj"
+              "C:\\Users\\Yunus\\Desktop\\UniSozlesme\\PersonelSozlesmeTakip.BL\\PersonelSozlesmeTakip.BL.csproj": {
+                "projectPath": "C:\\Users\\Yunus\\Desktop\\UniSozlesme\\PersonelSozlesmeTakip.BL\\PersonelSozlesmeTakip.BL.csproj"
               },
-              "C:\\Users\\Yunus\\source\\repos\\PersonelSoszlesmeTakip\\PersonelSozlesmeTakip.Repositories\\PersonelSozlesmeTakip.Repositories.csproj": {
-                "projectPath": "C:\\Users\\Yunus\\source\\repos\\PersonelSoszlesmeTakip\\PersonelSozlesmeTakip.Repositories\\PersonelSozlesmeTakip.Repositories.csproj"
+              "C:\\Users\\Yunus\\Desktop\\UniSozlesme\\PersonelSozlesmeTakip.Repositories\\PersonelSozlesmeTakip.Repositories.csproj": {
+                "projectPath": "C:\\Users\\Yunus\\Desktop\\UniSozlesme\\PersonelSozlesmeTakip.Repositories\\PersonelSozlesmeTakip.Repositories.csproj"
               }
             }
           }
@@ -71,18 +71,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Yunus\\source\\repos\\PersonelSoszlesmeTakip\\PersonelSozlesmeTakip.BL\\PersonelSozlesmeTakip.BL.csproj": {
+    "C:\\Users\\Yunus\\Desktop\\UniSozlesme\\PersonelSozlesmeTakip.BL\\PersonelSozlesmeTakip.BL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Yunus\\source\\repos\\PersonelSoszlesmeTakip\\PersonelSozlesmeTakip.BL\\PersonelSozlesmeTakip.BL.csproj",
+        "projectUniqueName": "C:\\Users\\Yunus\\Desktop\\UniSozlesme\\PersonelSozlesmeTakip.BL\\PersonelSozlesmeTakip.BL.csproj",
         "projectName": "PersonelSozlesmeTakip.BL",
-        "projectPath": "C:\\Users\\Yunus\\source\\repos\\PersonelSoszlesmeTakip\\PersonelSozlesmeTakip.BL\\PersonelSozlesmeTakip.BL.csproj",
+        "projectPath": "C:\\Users\\Yunus\\Desktop\\UniSozlesme\\PersonelSozlesmeTakip.BL\\PersonelSozlesmeTakip.BL.csproj",
         "packagesPath": "C:\\Users\\Yunus\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Yunus\\source\\repos\\PersonelSoszlesmeTakip\\PersonelSozlesmeTakip.BL\\obj\\",
+        "outputPath": "C:\\Users\\Yunus\\Desktop\\UniSozlesme\\PersonelSozlesmeTakip.BL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Yunus\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -99,14 +99,14 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Yunus\\source\\repos\\PersonelSoszlesmeTakip\\PersonelSozlesmeTakip.DAL\\PersonelSozlesmeTakip.DAL.csproj": {
-                "projectPath": "C:\\Users\\Yunus\\source\\repos\\PersonelSoszlesmeTakip\\PersonelSozlesmeTakip.DAL\\PersonelSozlesmeTakip.DAL.csproj"
+              "C:\\Users\\Yunus\\Desktop\\UniSozlesme\\PersonelSozlesmeTakip.DAL\\PersonelSozlesmeTakip.DAL.csproj": {
+                "projectPath": "C:\\Users\\Yunus\\Desktop\\UniSozlesme\\PersonelSozlesmeTakip.DAL\\PersonelSozlesmeTakip.DAL.csproj"
               },
-              "C:\\Users\\Yunus\\source\\repos\\PersonelSoszlesmeTakip\\PersonelSozlesmeTakip.Entities\\PersonelSozlesmeTakip.Entities.csproj": {
-                "projectPath": "C:\\Users\\Yunus\\source\\repos\\PersonelSoszlesmeTakip\\PersonelSozlesmeTakip.Entities\\PersonelSozlesmeTakip.Entities.csproj"
+              "C:\\Users\\Yunus\\Desktop\\UniSozlesme\\PersonelSozlesmeTakip.Entities\\PersonelSozlesmeTakip.Entities.csproj": {
+                "projectPath": "C:\\Users\\Yunus\\Desktop\\UniSozlesme\\PersonelSozlesmeTakip.Entities\\PersonelSozlesmeTakip.Entities.csproj"
               },
-              "C:\\Users\\Yunus\\source\\repos\\PersonelSoszlesmeTakip\\PersonelSozlesmeTakip.Repositories\\PersonelSozlesmeTakip.Repositories.csproj": {
-                "projectPath": "C:\\Users\\Yunus\\source\\repos\\PersonelSoszlesmeTakip\\PersonelSozlesmeTakip.Repositories\\PersonelSozlesmeTakip.Repositories.csproj"
+              "C:\\Users\\Yunus\\Desktop\\UniSozlesme\\PersonelSozlesmeTakip.Repositories\\PersonelSozlesmeTakip.Repositories.csproj": {
+                "projectPath": "C:\\Users\\Yunus\\Desktop\\UniSozlesme\\PersonelSozlesmeTakip.Repositories\\PersonelSozlesmeTakip.Repositories.csproj"
               }
             }
           }
@@ -136,18 +136,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Yunus\\source\\repos\\PersonelSoszlesmeTakip\\PersonelSozlesmeTakip.Core\\PersonelSozlesmeTakip.Core.csproj": {
+    "C:\\Users\\Yunus\\Desktop\\UniSozlesme\\PersonelSozlesmeTakip.Core\\PersonelSozlesmeTakip.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Yunus\\source\\repos\\PersonelSoszlesmeTakip\\PersonelSozlesmeTakip.Core\\PersonelSozlesmeTakip.Core.csproj",
+        "projectUniqueName": "C:\\Users\\Yunus\\Desktop\\UniSozlesme\\PersonelSozlesmeTakip.Core\\PersonelSozlesmeTakip.Core.csproj",
         "projectName": "PersonelSozlesmeTakip.Core",
-        "projectPath": "C:\\Users\\Yunus\\source\\repos\\PersonelSoszlesmeTakip\\PersonelSozlesmeTakip.Core\\PersonelSozlesmeTakip.Core.csproj",
+        "projectPath": "C:\\Users\\Yunus\\Desktop\\UniSozlesme\\PersonelSozlesmeTakip.Core\\PersonelSozlesmeTakip.Core.csproj",
         "packagesPath": "C:\\Users\\Yunus\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Yunus\\source\\repos\\PersonelSoszlesmeTakip\\PersonelSozlesmeTakip.Core\\obj\\",
+        "outputPath": "C:\\Users\\Yunus\\Desktop\\UniSozlesme\\PersonelSozlesmeTakip.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Yunus\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -191,18 +191,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Yunus\\source\\repos\\PersonelSoszlesmeTakip\\PersonelSozlesmeTakip.DAL\\PersonelSozlesmeTakip.DAL.csproj": {
+    "C:\\Users\\Yunus\\Desktop\\UniSozlesme\\PersonelSozlesmeTakip.DAL\\PersonelSozlesmeTakip.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Yunus\\source\\repos\\PersonelSoszlesmeTakip\\PersonelSozlesmeTakip.DAL\\PersonelSozlesmeTakip.DAL.csproj",
+        "projectUniqueName": "C:\\Users\\Yunus\\Desktop\\UniSozlesme\\PersonelSozlesmeTakip.DAL\\PersonelSozlesmeTakip.DAL.csproj",
         "projectName": "PersonelSozlesmeTakip.DAL",
-        "projectPath": "C:\\Users\\Yunus\\source\\repos\\PersonelSoszlesmeTakip\\PersonelSozlesmeTakip.DAL\\PersonelSozlesmeTakip.DAL.csproj",
+        "projectPath": "C:\\Users\\Yunus\\Desktop\\UniSozlesme\\PersonelSozlesmeTakip.DAL\\PersonelSozlesmeTakip.DAL.csproj",
         "packagesPath": "C:\\Users\\Yunus\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Yunus\\source\\repos\\PersonelSoszlesmeTakip\\PersonelSozlesmeTakip.DAL\\obj\\",
+        "outputPath": "C:\\Users\\Yunus\\Desktop\\UniSozlesme\\PersonelSozlesmeTakip.DAL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Yunus\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -219,8 +219,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Yunus\\source\\repos\\PersonelSoszlesmeTakip\\PersonelSozlesmeTakip.Entities\\PersonelSozlesmeTakip.Entities.csproj": {
-                "projectPath": "C:\\Users\\Yunus\\source\\repos\\PersonelSoszlesmeTakip\\PersonelSozlesmeTakip.Entities\\PersonelSozlesmeTakip.Entities.csproj"
+              "C:\\Users\\Yunus\\Desktop\\UniSozlesme\\PersonelSozlesmeTakip.Entities\\PersonelSozlesmeTakip.Entities.csproj": {
+                "projectPath": "C:\\Users\\Yunus\\Desktop\\UniSozlesme\\PersonelSozlesmeTakip.Entities\\PersonelSozlesmeTakip.Entities.csproj"
               }
             }
           }
@@ -272,18 +272,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Yunus\\source\\repos\\PersonelSoszlesmeTakip\\PersonelSozlesmeTakip.Entities\\PersonelSozlesmeTakip.Entities.csproj": {
+    "C:\\Users\\Yunus\\Desktop\\UniSozlesme\\PersonelSozlesmeTakip.Entities\\PersonelSozlesmeTakip.Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Yunus\\source\\repos\\PersonelSoszlesmeTakip\\PersonelSozlesmeTakip.Entities\\PersonelSozlesmeTakip.Entities.csproj",
+        "projectUniqueName": "C:\\Users\\Yunus\\Desktop\\UniSozlesme\\PersonelSozlesmeTakip.Entities\\PersonelSozlesmeTakip.Entities.csproj",
         "projectName": "PersonelSozlesmeTakip.Entities",
-        "projectPath": "C:\\Users\\Yunus\\source\\repos\\PersonelSoszlesmeTakip\\PersonelSozlesmeTakip.Entities\\PersonelSozlesmeTakip.Entities.csproj",
+        "projectPath": "C:\\Users\\Yunus\\Desktop\\UniSozlesme\\PersonelSozlesmeTakip.Entities\\PersonelSozlesmeTakip.Entities.csproj",
         "packagesPath": "C:\\Users\\Yunus\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Yunus\\source\\repos\\PersonelSoszlesmeTakip\\PersonelSozlesmeTakip.Entities\\obj\\",
+        "outputPath": "C:\\Users\\Yunus\\Desktop\\UniSozlesme\\PersonelSozlesmeTakip.Entities\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Yunus\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -300,8 +300,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Yunus\\source\\repos\\PersonelSoszlesmeTakip\\PersonelSozlesmeTakip.Core\\PersonelSozlesmeTakip.Core.csproj": {
-                "projectPath": "C:\\Users\\Yunus\\source\\repos\\PersonelSoszlesmeTakip\\PersonelSozlesmeTakip.Core\\PersonelSozlesmeTakip.Core.csproj"
+              "C:\\Users\\Yunus\\Desktop\\UniSozlesme\\PersonelSozlesmeTakip.Core\\PersonelSozlesmeTakip.Core.csproj": {
+                "projectPath": "C:\\Users\\Yunus\\Desktop\\UniSozlesme\\PersonelSozlesmeTakip.Core\\PersonelSozlesmeTakip.Core.csproj"
               }
             }
           }
@@ -331,18 +331,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Yunus\\source\\repos\\PersonelSoszlesmeTakip\\PersonelSozlesmeTakip.Repositories\\PersonelSozlesmeTakip.Repositories.csproj": {
+    "C:\\Users\\Yunus\\Desktop\\UniSozlesme\\PersonelSozlesmeTakip.Repositories\\PersonelSozlesmeTakip.Repositories.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Yunus\\source\\repos\\PersonelSoszlesmeTakip\\PersonelSozlesmeTakip.Repositories\\PersonelSozlesmeTakip.Repositories.csproj",
+        "projectUniqueName": "C:\\Users\\Yunus\\Desktop\\UniSozlesme\\PersonelSozlesmeTakip.Repositories\\PersonelSozlesmeTakip.Repositories.csproj",
         "projectName": "PersonelSozlesmeTakip.Repositories",
-        "projectPath": "C:\\Users\\Yunus\\source\\repos\\PersonelSoszlesmeTakip\\PersonelSozlesmeTakip.Repositories\\PersonelSozlesmeTakip.Repositories.csproj",
+        "projectPath": "C:\\Users\\Yunus\\Desktop\\UniSozlesme\\PersonelSozlesmeTakip.Repositories\\PersonelSozlesmeTakip.Repositories.csproj",
         "packagesPath": "C:\\Users\\Yunus\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Yunus\\source\\repos\\PersonelSoszlesmeTakip\\PersonelSozlesmeTakip.Repositories\\obj\\",
+        "outputPath": "C:\\Users\\Yunus\\Desktop\\UniSozlesme\\PersonelSozlesmeTakip.Repositories\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Yunus\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -359,11 +359,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Yunus\\source\\repos\\PersonelSoszlesmeTakip\\PersonelSozlesmeTakip.DAL\\PersonelSozlesmeTakip.DAL.csproj": {
-                "projectPath": "C:\\Users\\Yunus\\source\\repos\\PersonelSoszlesmeTakip\\PersonelSozlesmeTakip.DAL\\PersonelSozlesmeTakip.DAL.csproj"
+              "C:\\Users\\Yunus\\Desktop\\UniSozlesme\\PersonelSozlesmeTakip.DAL\\PersonelSozlesmeTakip.DAL.csproj": {
+                "projectPath": "C:\\Users\\Yunus\\Desktop\\UniSozlesme\\PersonelSozlesmeTakip.DAL\\PersonelSozlesmeTakip.DAL.csproj"
               },
-              "C:\\Users\\Yunus\\source\\repos\\PersonelSoszlesmeTakip\\PersonelSozlesmeTakip.Entities\\PersonelSozlesmeTakip.Entities.csproj": {
-                "projectPath": "C:\\Users\\Yunus\\source\\repos\\PersonelSoszlesmeTakip\\PersonelSozlesmeTakip.Entities\\PersonelSozlesmeTakip.Entities.csproj"
+              "C:\\Users\\Yunus\\Desktop\\UniSozlesme\\PersonelSozlesmeTakip.Entities\\PersonelSozlesmeTakip.Entities.csproj": {
+                "projectPath": "C:\\Users\\Yunus\\Desktop\\UniSozlesme\\PersonelSozlesmeTakip.Entities\\PersonelSozlesmeTakip.Entities.csproj"
               }
             }
           }
@@ -393,7 +393,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }

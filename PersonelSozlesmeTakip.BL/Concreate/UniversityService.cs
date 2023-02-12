@@ -32,10 +32,16 @@ namespace PersonelSozlesmeTakip.BL.Concreate
            _repo.Delete(entiy);
             context.SaveChanges();
         }
+        
 
         public ICollection<University> GetAll()
         {
             return _repo.GetAll();
+        }
+
+        public IQueryable<University> GetAll(params Expression<Func<University, object>>[] include)
+        {
+            return _repo.GetAll(include);
         }
 
         public University GetById(Guid id)

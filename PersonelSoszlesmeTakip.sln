@@ -3,19 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonelSozlesmeTakip.DAL", "PersonelSozlesmeTakip.DAL\PersonelSozlesmeTakip.DAL.csproj", "{D8FC54D7-63D3-49C3-BECA-873FA403D103}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PersonelSozlesmeTakip.DAL", "PersonelSozlesmeTakip.DAL\PersonelSozlesmeTakip.DAL.csproj", "{D8FC54D7-63D3-49C3-BECA-873FA403D103}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonelSozlesmeTakip.Entities", "PersonelSozlesmeTakip.Entities\PersonelSozlesmeTakip.Entities.csproj", "{127EA64F-EEC8-477A-8DB2-745E4641702E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PersonelSozlesmeTakip.Entities", "PersonelSozlesmeTakip.Entities\PersonelSozlesmeTakip.Entities.csproj", "{127EA64F-EEC8-477A-8DB2-745E4641702E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonelSozlesmeTakip.BL", "PersonelSozlesmeTakip.BL\PersonelSozlesmeTakip.BL.csproj", "{36A8D2B0-0B96-4634-9053-E20B8DCBDD1E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PersonelSozlesmeTakip.BL", "PersonelSozlesmeTakip.BL\PersonelSozlesmeTakip.BL.csproj", "{36A8D2B0-0B96-4634-9053-E20B8DCBDD1E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonelSozlesmeTakip.Core", "PersonelSozlesmeTakip.Core\PersonelSozlesmeTakip.Core.csproj", "{BE263DB1-D6E1-4E78-88E9-9398C39F8333}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PersonelSozlesmeTakip.Core", "PersonelSozlesmeTakip.Core\PersonelSozlesmeTakip.Core.csproj", "{BE263DB1-D6E1-4E78-88E9-9398C39F8333}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonelSozlesmeTakip.Repositories", "PersonelSozlesmeTakip.Repositories\PersonelSozlesmeTakip.Repositories.csproj", "{E14C4D37-19EA-4B98-A91A-399D0E8A72AB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PersonelSozlesmeTakip.Repositories", "PersonelSozlesmeTakip.Repositories\PersonelSozlesmeTakip.Repositories.csproj", "{E14C4D37-19EA-4B98-A91A-399D0E8A72AB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonelSozlesmeTakip.API", "PersonelSozlesmeTakip.API\PersonelSozlesmeTakip.API.csproj", "{DCE28DA0-8C06-4166-9258-49DEB773377C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PersonelSozlesmeTakip.API", "PersonelSozlesmeTakip.API\PersonelSozlesmeTakip.API.csproj", "{DCE28DA0-8C06-4166-9258-49DEB773377C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonelSozlesmeTakip.WebUI", "PersonelSozlesmeTakip.WebUI\PersonelSozlesmeTakip.WebUI.csproj", "{0FBC1592-3BC9-4FA8-91E8-0ACA20C65EEE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PersonelSozlesmeTakip.WebUI", "PersonelSozlesmeTakip.WebUI\PersonelSozlesmeTakip.WebUI.csproj", "{0FBC1592-3BC9-4FA8-91E8-0ACA20C65EEE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniSozlesmeWinUI", "UniSozlesmeWinUI\UniSozlesmeWinUI.csproj", "{AEF1E148-E520-4A43-A34F-32C369ECB15F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{0FBC1592-3BC9-4FA8-91E8-0ACA20C65EEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0FBC1592-3BC9-4FA8-91E8-0ACA20C65EEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0FBC1592-3BC9-4FA8-91E8-0ACA20C65EEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AEF1E148-E520-4A43-A34F-32C369ECB15F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEF1E148-E520-4A43-A34F-32C369ECB15F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEF1E148-E520-4A43-A34F-32C369ECB15F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEF1E148-E520-4A43-A34F-32C369ECB15F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

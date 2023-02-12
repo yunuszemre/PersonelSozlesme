@@ -9,5 +9,6 @@ namespace PersonelSozlesmeTakip.BL.Abstract
 {
     public interface IUniversityService : IGenericService<University>
     {
+        
     }
 }

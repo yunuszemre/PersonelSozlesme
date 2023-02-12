@@ -1,4 +1,10 @@
 using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
+using PersonelSozlesmeTakip.BL.Abstract;
+using PersonelSozlesmeTakip.BL.Concreate;
+using PersonelSozlesmeTakip.DAL.Context;
+using PersonelSozlesmeTakip.Repositories.Abstract;
+using PersonelSozlesmeTakip.Repositories.Concreate;
 
 namespace PersonelSozlesmeTakip.WebUI
 {
@@ -10,6 +16,15 @@ namespace PersonelSozlesmeTakip.WebUI
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+            builder.Services.AddDbContext<PersonelSozlesmeContext>(options => options.UseSqlServer("Server=DESKTOP-BODOH2U\\SA; Database=UniDb; uid=sa; pwd=1234;"));
+
+
+            builder.Services.AddScoped<IUniversityService, UniversityService>();
+            builder.Services.AddScoped<IPersonelService, PersonelService>();
+
+
+            builder.Services.AddScoped<IUniversityRepository, UniversityRepository>();
+            builder.Services.AddScoped<IPersonelRepository, PersonelRepository>();
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.

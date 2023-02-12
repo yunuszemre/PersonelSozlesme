@@ -30,23 +30,12 @@ namespace PersonelSozlesmeTakip.DAL.Context
         }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=DESKTOP-BODOH2U\\SA; Database=UniDb; uid = sa; pwd = 1234;");
+            optionsBuilder.UseSqlServer("Server=DESKTOP-VA3Q2CE\\YUNUS; Database=UniDb; uid = sa; pwd = 1234;");
             base.OnConfiguring(optionsBuilder);
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            //modelBuilder.Entity<DepartmentPerson>()
-            //    .HasKey(x => new { x.PersonelId, x.DepartmentId });
-
-            //modelBuilder.Entity<DepartmentPerson>()
-            //    .HasOne(x => x.Personel)
-            //    .WithMany(x => x.Departments)
-            //    .HasForeignKey(x => x.PersonelId);
-
-            //modelBuilder.Entity<DepartmentPerson>()
-            //    .HasOne(x => x.Department)
-            //    .WithMany(x => x.Personels)
-            //    .HasForeignKey(x1 => x1.DepartmentId);
+            
 
             
 

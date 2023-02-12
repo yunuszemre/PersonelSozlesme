@@ -9,5 +9,6 @@ namespace PersonelSozlesmeTakip.Repositories.Abstract
 {
     public interface IUniversityRepository : IGenericRepository<University>
     {
+        
     }
 }

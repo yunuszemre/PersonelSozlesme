@@ -10,4 +10,10 @@
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.11" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\PersonelSozlesmeTakip.BL\PersonelSozlesmeTakip.BL.csproj" />
+    <ProjectReference Include="..\PersonelSozlesmeTakip.DAL\PersonelSozlesmeTakip.DAL.csproj" />
+    <ProjectReference Include="..\PersonelSozlesmeTakip.Entities\PersonelSozlesmeTakip.Entities.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -2053,11 +2053,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Yunus\\source\\repos\\PersonelSoszlesmeTakip\\PersonelSozlesmeTakip.DAL\\PersonelSozlesmeTakip.DAL.csproj",
+      "projectUniqueName": "C:\\Users\\Yunus\\Desktop\\UniSozlesme\\PersonelSozlesmeTakip.DAL\\PersonelSozlesmeTakip.DAL.csproj",
       "projectName": "PersonelSozlesmeTakip.DAL",
-      "projectPath": "C:\\Users\\Yunus\\source\\repos\\PersonelSoszlesmeTakip\\PersonelSozlesmeTakip.DAL\\PersonelSozlesmeTakip.DAL.csproj",
+      "projectPath": "C:\\Users\\Yunus\\Desktop\\UniSozlesme\\PersonelSozlesmeTakip.DAL\\PersonelSozlesmeTakip.DAL.csproj",
       "packagesPath": "C:\\Users\\Yunus\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Yunus\\source\\repos\\PersonelSoszlesmeTakip\\PersonelSozlesmeTakip.DAL\\obj\\",
+      "outputPath": "C:\\Users\\Yunus\\Desktop\\UniSozlesme\\PersonelSozlesmeTakip.DAL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Yunus\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -2074,8 +2074,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Yunus\\source\\repos\\PersonelSoszlesmeTakip\\PersonelSozlesmeTakip.Entities\\PersonelSozlesmeTakip.Entities.csproj": {
-              "projectPath": "C:\\Users\\Yunus\\source\\repos\\PersonelSoszlesmeTakip\\PersonelSozlesmeTakip.Entities\\PersonelSozlesmeTakip.Entities.csproj"
+            "C:\\Users\\Yunus\\Desktop\\UniSozlesme\\PersonelSozlesmeTakip.Entities\\PersonelSozlesmeTakip.Entities.csproj": {
+              "projectPath": "C:\\Users\\Yunus\\Desktop\\UniSozlesme\\PersonelSozlesmeTakip.Entities\\PersonelSozlesmeTakip.Entities.csproj"
             }
           }
         }
@@ -2127,7 +2127,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
       }
     }
   }
